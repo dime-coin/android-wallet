@@ -1,0 +1,22 @@
+Have your Dimecoins always with you, in your pocket! You pay by quickly scanning a QR-code. As a merchant, you receive payments reliably and instantly. Dimecoin Wallet is the first mobile Dimecoin app, and arguably also the most secure!
+
+FEATURES:
+
+• No registration, web service or cloud needed! This wallet is de-centralized and peer to peer.
+• Display of Dimecoin amount in QRK and mQRK.
+• Conversion to and from national currencies.
+• Sending and receiving of Dimecoin via NFC, QR-codes or Dimecoin URLs.
+• Address book for regularly used Dimecoin addresses.
+• When you're offline, you can still pay via Bluetooth.
+• System notification for received coins.
+• App widget for Dimecoin balance.
+
+You can find more about Dimecoin at
+http://www.dimecoin.co/
+
+If you want to contribute to Dimecoin Wallet, the project is located at
+https://github.com/HashEngineering/Dimecoin-wallet
+
+License: GPLv3
+Use at your own risk!
+http://www.gnu.org/licenses/gpl-3.0.en.html

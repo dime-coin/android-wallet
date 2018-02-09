@@ -1,0 +1,20 @@
+Dit is een standalone Dimecoin Wallet voor uw Android apparaat. U kan direct Dimecoins versturen tussen telefoons door simpelweg de QR-code te scannen die de app weergeeft of via NFC (Near Field Communication).
+
+FUNCTIES:
+
+• Weergeven van het wallet saldo in Dimecoin en verschillende andere valuta.
+• Verzenden en ontvangen van Dimecoin via NFC, QR-codes of Dimecoin URLs.
+• Adresboek voor veelgebruikte Dimecoin adressen.
+• Transacties ingeven tijdens het offline zijn, deze zullen worden uitgevoerd wanneer u online komt.
+• Systeem melding over Dimecoin connectiviteit en ontvangen Dimecoins.
+• Widget voor Dimecoin saldo.
+
+Voor meer informatie over Dimecoin kunt u terecht op
+http://www.qrk.cc/
+
+Als u een bijdrage wil leveren aan Dimecoin Wallet, het project is te vinden op
+https://github.com/HashEngineering/Dimecoin-wallet
+
+Licentie: GPLv3
+Gebruik op eigen risico!
+http://www.gnu.org/licenses/gpl-3.0.en.html
