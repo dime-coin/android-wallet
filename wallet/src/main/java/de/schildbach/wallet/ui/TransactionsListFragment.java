@@ -306,8 +306,7 @@ public class TransactionsListFragment extends SherlockListFragment implements Lo
 						return true;
 
 					case R.id.wallet_transactions_context_browse:
-						startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.EXPLORE_BASE_URL + "tx/info/" + tx.getHashAsString())));
-
+						startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(String.format("%stx.dws?%s.htm", Constants.EXPLORE_BASE_URL, tx.getHashAsString()))));
 						mode.finish();
 						return true;
 				}

@@ -222,9 +222,7 @@ public final class WalletAddressesFragment extends SherlockListFragment
 						return true;
 
 					case R.id.wallet_addresses_context_browse:
-						startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.EXPLORE_BASE_URL + "address/info/"
-								+ getAddress(position).toString())));
-
+						startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(String.format("%saddress.dws?%s.htm", Constants.EXPLORE_BASE_URL, getAddress(position).toString()))));
 						mode.finish();
 						return true;
 				}
