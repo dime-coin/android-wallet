@@ -1,0 +1,2 @@
+include ':wallet', ':integration-android'
+include ':sample-integration-android'
