@@ -21,7 +21,6 @@ android {
 }
 
 dependencies {
-    compile project(":integration-android")
     compile "com.google.android:android:4.0.1.2"
     compile "com.google.android:annotations:4.1.1.4"
     compile "com.google.android:support-v4:r7"

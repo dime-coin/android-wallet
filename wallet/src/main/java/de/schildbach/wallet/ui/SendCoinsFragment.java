@@ -82,7 +82,6 @@ import de.schildbach.wallet.ExchangeRatesProvider;
 import de.schildbach.wallet.ExchangeRatesProvider.ExchangeRate;
 import de.schildbach.wallet.PaymentIntent;
 import de.schildbach.wallet.WalletApplication;
-import de.schildbach.wallet.integration.android.BitcoinIntegration;
 import de.schildbach.wallet.offline.DirectPaymentTask;
 import de.schildbach.wallet.ui.InputParser.BinaryInputParser;
 import de.schildbach.wallet.ui.InputParser.StreamInputParser;
@@ -833,7 +832,8 @@ public final class SendCoinsFragment extends SherlockFragment
 				application.broadcastTransaction(sentTransaction);
 
 				final Intent result = new Intent();
-				BitcoinIntegration.transactionHashToResult(result, sentTransaction.getHashAsString());
+				result.putExtra("transaction_hash", sentTransaction.getHashAsString());
+				result.putExtra("transaction_id", sentTransaction.getHashAsString());
 				activity.setResult(Activity.RESULT_OK, result);
 			}
 
