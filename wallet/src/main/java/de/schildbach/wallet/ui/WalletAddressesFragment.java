@@ -38,11 +38,11 @@ import android.widget.BaseAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
-import com.actionbarsherlock.app.SherlockListFragment;
-import com.actionbarsherlock.view.ActionMode;
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuInflater;
-import com.actionbarsherlock.view.MenuItem;
+import android.support.v4.app.ListFragment;
+import android.view.ActionMode;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import com.google.bitcoin.core.AbstractWalletEventListener;
 import com.google.bitcoin.core.Address;
 import com.google.bitcoin.core.ECKey;
@@ -63,7 +63,7 @@ import co.com.dimecoin.wallet.R;
 /**
  * @author Andreas Schildbach
  */
-public final class WalletAddressesFragment extends SherlockListFragment
+public final class WalletAddressesFragment extends ListFragment
 {
 	private AddressBookActivity activity;
 	private WalletApplication application;

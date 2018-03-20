@@ -41,9 +41,14 @@ import android.support.v4.app.LoaderManager;
 import android.support.v4.app.LoaderManager.LoaderCallbacks;
 import android.support.v4.app.ShareCompat.IntentBuilder;
 import android.support.v4.content.Loader;
+import android.support.v4.view.MenuItemCompat;
+import android.support.v7.widget.ShareActionProvider;
 import android.text.ClipboardManager;
 import android.text.SpannableStringBuilder;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
@@ -56,11 +61,7 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.SherlockFragment;
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuInflater;
-import com.actionbarsherlock.view.MenuItem;
-import com.actionbarsherlock.widget.ShareActionProvider;
+import android.support.v4.app.Fragment;
 import com.google.bitcoin.core.Address;
 import com.google.bitcoin.core.ECKey;
 import com.google.bitcoin.core.Wallet;
@@ -84,7 +85,7 @@ import co.com.dimecoin.wallet.R;
 /**
  * @author Andreas Schildbach
  */
-public final class RequestCoinsFragment extends SherlockFragment
+public final class RequestCoinsFragment extends Fragment
 {
 	private AbstractBindServiceActivity activity;
 	private WalletApplication application;
@@ -217,7 +218,7 @@ public final class RequestCoinsFragment extends SherlockFragment
 	{
 		super.onViewCreated(view, savedInstanceState);
 
-		// don't call in onCreate() because ActionBarSherlock invokes onCreateOptionsMenu() too early
+		// don't call in onCreate() because ActionBar invokes onCreateOptionsMenu() too early
 		setHasOptionsMenu(true);
 
 		amountCalculatorLink.setExchangeDirection(config.getLastExchangeDirection());
@@ -340,8 +341,8 @@ public final class RequestCoinsFragment extends SherlockFragment
 		inflater.inflate(R.menu.request_coins_fragment_options, menu);
 
 		final MenuItem shareItem = menu.findItem(R.id.request_coins_options_share);
-		shareActionProvider = (ShareActionProvider) shareItem.getActionProvider();
-
+		shareActionProvider = new ShareActionProvider(getContext());
+		MenuItemCompat.setActionProvider(shareItem, shareActionProvider);
 		updateShareIntent();
 
 		super.onCreateOptionsMenu(menu, inflater);

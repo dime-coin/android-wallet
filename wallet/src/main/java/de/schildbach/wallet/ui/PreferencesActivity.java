@@ -33,11 +33,12 @@ import android.os.Build;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
+import android.preference.PreferenceActivity;
 import android.preference.PreferenceScreen;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockPreferenceActivity;
-import com.actionbarsherlock.view.MenuItem;
+import android.app.ActionBar;
+import android.util.Log;
+import android.view.MenuItem;
 
 import de.schildbach.wallet.Configuration;
 import de.schildbach.wallet.Constants;
@@ -48,7 +49,7 @@ import co.com.dimecoin.wallet.R;
 /**
  * @author Andreas Schildbach
  */
-public final class PreferencesActivity extends SherlockPreferenceActivity implements OnPreferenceChangeListener
+public final class PreferencesActivity extends PreferenceActivity implements OnPreferenceChangeListener
 {
 	private WalletApplication application;
 	private Preference trustedPeerPreference;
@@ -87,7 +88,7 @@ public final class PreferencesActivity extends SherlockPreferenceActivity implem
 		final Preference bluetoothOfflineTransactionsPreference = findPreference(Configuration.PREFS_KEY_LABS_BLUETOOTH_OFFLINE_TRANSACTIONS);
 		bluetoothOfflineTransactionsPreference.setEnabled(Build.VERSION.SDK_INT >= Constants.SDK_JELLY_BEAN_MR2);
 
-		final ActionBar actionBar = getSupportActionBar();
+		final ActionBar actionBar = getActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);
 
 		final SharedPreferences prefs = getPreferenceManager().getSharedPreferences();

@@ -57,11 +57,11 @@ import android.text.style.StyleSpan;
 import android.view.View;
 import android.widget.ListView;
 
-import com.actionbarsherlock.app.SherlockListFragment;
-import com.actionbarsherlock.view.ActionMode;
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuInflater;
-import com.actionbarsherlock.view.MenuItem;
+import android.support.v4.app.ListFragment;
+import android.view.ActionMode;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import com.google.bitcoin.core.Address;
 import com.google.bitcoin.core.ScriptException;
 import com.google.bitcoin.core.Transaction;
@@ -85,7 +85,7 @@ import de.schildbach.wallet.util.ThrottlingWalletChangeListener;
 /**
  * @author Andreas Schildbach
  */
-public class TransactionsListFragment extends SherlockListFragment implements LoaderCallbacks<List<Transaction>>, OnSharedPreferenceChangeListener
+public class TransactionsListFragment extends ListFragment implements LoaderCallbacks<List<Transaction>>, OnSharedPreferenceChangeListener
 {
 	public enum Direction
 	{

@@ -17,14 +17,14 @@
 
 package de.schildbach.wallet.ui;
 
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
-
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.view.MenuItem;
+import android.util.Log;
+import android.view.MenuItem;
 
 import de.schildbach.wallet.util.ViewPagerTabs;
 import co.com.dimecoin.wallet.R;
@@ -44,7 +44,7 @@ public final class NetworkMonitorActivity extends AbstractWalletActivity
 
 		setContentView(R.layout.network_monitor_content);
 
-		final ActionBar actionBar = getSupportActionBar();
+		final ActionBar actionBar = getActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);
 
 		final ViewPager pager = (ViewPager) findViewById(R.id.network_monitor_pager);

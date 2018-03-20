@@ -19,9 +19,10 @@ package de.schildbach.wallet.ui;
 
 import android.os.Bundle;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuItem;
+import android.app.ActionBar;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import co.com.dimecoin.wallet.R;
 
 /**
@@ -36,14 +37,14 @@ public final class RequestCoinsActivity extends AbstractBindServiceActivity
 
 		setContentView(R.layout.request_coins_content);
 
-		final ActionBar actionBar = getSupportActionBar();
+		final ActionBar actionBar = getActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(final Menu menu)
 	{
-		getSupportMenuInflater().inflate(R.menu.request_coins_activity_options, menu);
+		getMenuInflater().inflate(R.menu.request_coins_activity_options, menu);
 
 		return super.onCreateOptionsMenu(menu);
 	}

@@ -21,10 +21,11 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.Preference;
+import android.preference.PreferenceActivity;
 import android.preference.PreferenceScreen;
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockPreferenceActivity;
-import com.actionbarsherlock.view.MenuItem;
+import android.app.ActionBar;
+import android.util.Log;
+import android.view.MenuItem;
 import com.google.bitcoin.core.VersionMessage;
 import de.schildbach.wallet.Constants;
 import de.schildbach.wallet.WalletApplication;
@@ -40,7 +41,7 @@ import java.util.prefs.Preferences;
 /**
  * @author Andreas Schildbach
  */
-public final class WhereToBuyActivity extends SherlockPreferenceActivity
+public final class WhereToBuyActivity extends PreferenceActivity
 {
   	@Override
 	protected void onCreate(final Bundle savedInstanceState)
@@ -49,7 +50,7 @@ public final class WhereToBuyActivity extends SherlockPreferenceActivity
 
 		addPreferencesFromResource(R.xml.where_to_buy);
 
-		final ActionBar actionBar = getSupportActionBar();
+		final ActionBar actionBar = getActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);
 	}
 

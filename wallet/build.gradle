@@ -10,6 +10,12 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "0.1.1"
+        multiDexEnabled true
+    }
+
+    dexOptions {
+        preDexLibraries false
+        javaMaxHeapSize "2g"
     }
 
     buildTypes {
@@ -21,15 +27,13 @@ android {
 }
 
 dependencies {
-    compile "com.google.android:android:4.0.1.2"
-    compile "com.google.android:annotations:4.1.1.4"
-    compile "com.google.android:support-v4:r7"
-    compile "com.actionbarsherlock:actionbarsherlock:4.4.0@aar"
-    compile "com.github.dime-coin.dimecoinj:dimecoinj:0.12.1"
-    compile "com.google.zxing:core:2.2"
-    compile "org.slf4j:slf4j-api:1.7.5"
-    compile "com.github.tony19:logback-android-classic:1.0.10-2"
-    compile "com.github.tony19:logback-android-core:1.0.10-2"
-    compile "com.google.code.findbugs:jsr305:2.0.1"
-    testCompile "junit:junit:4.11"
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.google.android:annotations:4.1.1.4'
+    compile 'com.github.dime-coin.dimecoinj:dimecoinj:0.12.1'
+    compile 'com.google.zxing:core:2.2'
+    compile 'org.slf4j:slf4j-api:1.7.5'
+    compile 'com.github.tony19:logback-android-classic:1.0.10-2'
+    compile 'com.github.tony19:logback-android-core:1.0.10-2'
+    testCompile 'junit:junit:4.12'
 }

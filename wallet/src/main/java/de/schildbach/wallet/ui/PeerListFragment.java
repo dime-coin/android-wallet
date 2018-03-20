@@ -45,7 +45,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.SherlockListFragment;
+import android.support.v4.app.ListFragment;
 import com.google.bitcoin.core.Peer;
 import com.google.bitcoin.core.VersionMessage;
 
@@ -56,7 +56,7 @@ import co.com.dimecoin.wallet.R;
 /**
  * @author Andreas Schildbach
  */
-public final class PeerListFragment extends SherlockListFragment
+public final class PeerListFragment extends ListFragment
 {
 	private AbstractWalletActivity activity;
 	private LoaderManager loaderManager;
