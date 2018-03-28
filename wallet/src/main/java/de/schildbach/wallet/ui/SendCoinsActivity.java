@@ -23,7 +23,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
-import android.app.ActionBar;
+import android.support.v7.app.ActionBar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -53,7 +53,7 @@ public final class SendCoinsActivity extends AbstractBindServiceActivity
 
 		getWalletApplication().startBlockchainService(false);
 
-		final ActionBar actionBar = getActionBar();
+		final ActionBar actionBar = getSupportActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);
 	}
 

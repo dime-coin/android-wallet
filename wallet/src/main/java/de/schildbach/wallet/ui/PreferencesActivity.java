@@ -36,7 +36,6 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceScreen;
 
-import android.app.ActionBar;
 import android.util.Log;
 import android.view.MenuItem;
 
@@ -87,9 +86,6 @@ public final class PreferencesActivity extends PreferenceActivity implements OnP
 
 		final Preference bluetoothOfflineTransactionsPreference = findPreference(Configuration.PREFS_KEY_LABS_BLUETOOTH_OFFLINE_TRANSACTIONS);
 		bluetoothOfflineTransactionsPreference.setEnabled(Build.VERSION.SDK_INT >= Constants.SDK_JELLY_BEAN_MR2);
-
-		final ActionBar actionBar = getActionBar();
-		actionBar.setDisplayHomeAsUpEnabled(true);
 
 		final SharedPreferences prefs = getPreferenceManager().getSharedPreferences();
 		final String trustedPeer = prefs.getString(Configuration.PREFS_KEY_TRUSTED_PEER, "").trim();

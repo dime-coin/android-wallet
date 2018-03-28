@@ -245,7 +245,4 @@
 	<string name="address_unlabeled">(unlabeled)</string>
     <string name="splash_copyright">© 2014 Hash Engineering Solutions</string>
 
-    <!-- Where to Buy -->
-    <string name="where_to_buy_title">Where to buy</string>
-
 </resources>

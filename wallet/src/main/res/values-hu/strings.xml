@@ -141,7 +141,6 @@
 	<string name="scan_camera_problem_dialog_message">A kamera nem válaszol. Próbáld meg újraindítani az eszközt.</string>
 
 	<string name="input_parser_cannot_classify">Nem osztályozható bemenet:\n%s</string>
-	<string name="input_parser_invalid_Dimecoin_uri">Érvénytelen Dimecoin URI:\n%s</string>
 	<string name="input_parser_invalid_address">Érvénytelen Dimecoin cím!\n(Keveredés a Mainnet/Testnet-tel?)</string>
 	<string name="input_parser_invalid_transaction">Érvénytelen tranzakció:\n%s</string>
 

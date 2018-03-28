@@ -150,7 +150,6 @@
 	<string name="scan_camera_problem_dialog_title">Désolé</string>
 	<string name="scan_camera_problem_dialog_message">La caméra a un problème. Vous devez probablement redémarrer votre appareil.</string>
 	<string name="input_parser_cannot_classify">Impossible de classifier l\'entrée :\n%s</string>
-	<string name="input_parser_invalid_Dimecoin_uri">URI Dimecoin invalide :\n%s</string>
 	<string name="input_parser_invalid_address">Réception d\'une adresse Dimecoin invalide!\n(Mélange Mainnet/Testnet?)</string>
 	<string name="input_parser_invalid_transaction">Transaction invalide :\n%s</string>
 	<string name="preferences_activity_title">Réglages</string>

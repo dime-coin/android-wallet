@@ -19,7 +19,7 @@ package de.schildbach.wallet.ui;
 
 import android.os.Bundle;
 
-import android.app.ActionBar;
+import android.support.v7.app.ActionBar;
 import android.util.Log;
 import android.view.MenuItem;
 import co.com.dimecoin.wallet.R;
@@ -37,7 +37,7 @@ public final class ExchangeRatesActivity extends AbstractWalletActivity
 
 		setContentView(R.layout.exchange_rates_content);
 
-		final ActionBar actionBar = getActionBar();
+		final ActionBar actionBar = getSupportActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);
 	}
 

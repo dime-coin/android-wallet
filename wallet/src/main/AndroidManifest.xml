@@ -146,10 +146,6 @@
 			android:name="de.schildbach.wallet.ui.AboutActivity"
 			android:label="@string/about_title"
 			android:screenOrientation="behind" />
-        <activity
-                android:name="de.schildbach.wallet.ui.WhereToBuyActivity"
-                android:label="@string/where_to_buy_title"
-                android:screenOrientation="behind" />
 		<activity
 			android:name="de.schildbach.wallet.ui.ImportKeysActivity"
 			android:configChanges="orientation|keyboard|keyboardHidden"
