@@ -21,6 +21,7 @@ import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -84,6 +85,8 @@ public class ExchangeRatesProvider extends ContentProvider
 	private Map<String, ExchangeRate> exchangeRates = null;
 	private long lastUpdated = 0;
 
+	private static final URL BITCOINAVERAGE_URL;
+	private static final String[] BITCOINAVERAGE_FIELDS = new String[] { "last" };
 	private static final URL BITCOINCHARTS_URL;
 	private static final String[] BITCOINCHARTS_FIELDS = new String[] { "24h", "7d", "30d" };
 	private static final URL BLOCKCHAININFO_URL;
@@ -95,6 +98,7 @@ public class ExchangeRatesProvider extends ContentProvider
 	{
 		try
 		{
+			BITCOINAVERAGE_URL = new URL( "https://apiv2.bitcoinaverage.com/indices/global/ticker/short?crypto=BTC");
 			BITCOINCHARTS_URL = new URL("https://api.bitcoincharts.com/v1/weighted_prices.json");
 			BLOCKCHAININFO_URL = new URL("https://blockchain.info/ticker");
 		}
@@ -136,6 +140,8 @@ public class ExchangeRatesProvider extends ContentProvider
 		if (lastUpdated == 0 || now - lastUpdated > UPDATE_FREQ_MS)
 		{
 			Map<String, ExchangeRate> newExchangeRates = null;
+			if (newExchangeRates == null)
+				newExchangeRates = requestExchangeRates(BITCOINAVERAGE_URL, BITCOINAVERAGE_FIELDS);
 			if (newExchangeRates == null)
 				newExchangeRates = requestExchangeRates(BITCOINCHARTS_URL, BITCOINCHARTS_FIELDS);
 			if (newExchangeRates == null)
@@ -241,7 +247,7 @@ public class ExchangeRatesProvider extends ContentProvider
     {
         Double btcRate = null;
         try {
-            URL url = new URL("https://chainz.cryptoid.info/explorer/index.data.dws?coin=dime");
+            URL url = new URL(String.format("https://chainz.cryptoid.info/explorer/index.data.dws?coin=%s", CoinDefinition.coinURIScheme));
             URLConnection urlConnection = url.openConnection();
             urlConnection.setConnectTimeout(Constants.HTTP_TIMEOUT_MS * 2);
             urlConnection.setReadTimeout(Constants.HTTP_TIMEOUT_MS * 2);
@@ -292,36 +298,16 @@ public class ExchangeRatesProvider extends ContentProvider
 				final JSONObject head = new JSONObject(content.toString());
 				for (final Iterator<String> i = head.keys(); i.hasNext();)
 				{
-					final String currencyCode = i.next();
-					if (!"timestamp".equals(currencyCode))
+					final String currency = i.next();
+					if (!"timestamp".equals(currency))
 					{
-						final JSONObject o = head.getJSONObject(currencyCode);
+						final JSONObject o = head.getJSONObject(currency);
 
-						for (final String field : fields)
-						{
-							String rateStr = o.optString(field, null);
-
-							if (rateStr != null)
-							{
-								try
-								{
-                                    double rateForBTC = Double.parseDouble(rateStr);
-
-                                    rateStr = String.format("%.8f", rateForBTC * btcRate).replace(",", ".");
-
-									final BigInteger rate = GenericUtils.toNanoCoins_BTC(rateStr, 0);
-
-									if (rate.signum() > 0)
-									{
-										rates.put(currencyCode, new ExchangeRate(currencyCode, rate, url.getHost()));
-										break;
-									}
-								}
-								catch (final ArithmeticException x)
-								{
-									log.warn("problem fetching {} exchange rate from {}: {}", new Object[] { currencyCode, url, x.getMessage() });
-								}
-
+						for (String field : fields) {
+							Double rate = o.getDouble(field);
+							if ((rate * btcRate) >= 0.00000001) {
+								String code = currency.replace("BTC", "");
+								rates.put(code, new ExchangeRate(code, GenericUtils.toNanoCoins_BTC(String.format("%.8f", rate * btcRate).replace(",", "."), 0), url.getHost()));
 							}
 						}
 					}
@@ -329,14 +315,9 @@ public class ExchangeRatesProvider extends ContentProvider
 
 				log.info("fetched exchange rates from {}, took {} ms", url, (System.currentTimeMillis() - start));
 
-                //Add Bitcoin information
-                if(rates.size() == 0)
-                {
-                    int i = 0;
-                    i++;
-                }
-                // else rates.put("BTC", new ExchangeRate("BTC", GenericUtils.toNanoCoins_BTC(String.format("%.8f", btcRate).replace(",", "."), 0), "chainz.cryptoid.info"));
-
+				if (btcRate >= 0.00000001) {
+					rates.put("BTC", new ExchangeRate("BTC", GenericUtils.toNanoCoins_BTC(String.format("%.8f", btcRate).replace(",", "."), 0), "chainz.cryptoid.info"));
+				}
 
                 return rates;
 			}
