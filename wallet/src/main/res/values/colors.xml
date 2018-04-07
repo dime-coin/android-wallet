@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+	<color name="dimecoin_blue">#024da2</color>
+
 	<!-- foreground -->
 	<color name="fg_significant">#ff000000</color>
 	<color name="fg_less_significant">#ff666666</color>
@@ -10,11 +12,11 @@
 
 	<!-- background -->
 	<color name="bg_bright">#ffffffff</color>
-	<color name="bg_less_bright">#ffe8e8f0</color>
-	<color name="bg_panel">#ffd8d8e0</color>
-	<color name="bg_form">#ffe8e8f0</color>
-	<color name="bg_list">#40ffffff</color>
-	<color name="bg_list_selected">#40808090</color>
+	<color name="bg_less_bright">#ffE6E6E6</color>
+	<color name="bg_panel">#ffF2F2F2</color>
+	<color name="bg_form">#ffF2F2F2</color>
+	<color name="bg_list">#ffffffff</color>
+	<color name="bg_list_selected">#ffF2F2F2</color>
 
 	<!-- scanner -->
 	<color name="scan_mask">#60000000</color>

@@ -5,7 +5,7 @@
 	android:dividerPadding="8dp"
 	android:measureWithLargestChild="true"
 	android:orientation="horizontal"
-    android:background="@drawable/action_bar_background">
+    android:background="@color/dimecoin_blue">
 
 	<Button
 		android:id="@+id/wallet_actions_request"

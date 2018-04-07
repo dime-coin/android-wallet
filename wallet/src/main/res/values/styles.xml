@@ -16,9 +16,9 @@
 
 	<style name="My.Theme.Dialog" parent="@style/Theme.AppCompat.Light.Dialog" />
 
-	<style name="My.Widget.ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
-		<item name="background">@drawable/action_bar_background</item>
-		<item name="android:background">@drawable/action_bar_background</item>
+	<style name="My.Widget.ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar">
+		<item name="background">@color/dimecoin_blue</item>
+		<item name="android:background">@color/dimecoin_blue</item>
 		<item name="titleTextStyle">@style/My.TextAppearance.Widget.ActionBar.Title</item>
 		<item name="android:titleTextStyle">@style/My.TextAppearance.Widget.ActionBar.Title</item>
 		<item name="subtitleTextStyle">@style/My.TextAppearance.Widget.ActionBar.Subtitle</item>

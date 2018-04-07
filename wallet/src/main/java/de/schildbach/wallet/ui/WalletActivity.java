@@ -62,6 +62,7 @@ import android.nfc.NdefMessage;
 import android.nfc.NfcAdapter;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.v7.app.ActionBar;
 import android.text.format.DateUtils;
 import android.view.View;
 import android.view.ViewGroup;
@@ -121,6 +122,10 @@ public final class WalletActivity extends AbstractOnDemandServiceActivity
 		wallet = application.getWallet();
 
 		setContentView(R.layout.wallet_content);
+
+		ActionBar actionBar = getSupportActionBar();
+		actionBar.setDisplayShowHomeEnabled(true);
+		actionBar.setIcon(R.mipmap.ic_launcher);
 
 		config.touchLastUsed();
 
