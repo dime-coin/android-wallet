@@ -16,7 +16,6 @@
 	<string name="wallet_address_fragment_clipboard_msg">Dimecoin cím a vágólapra másolva</string>
 	<string name="wallet_addresses_fragment_add_dialog_title">Új Dimecoin cím</string>
 	<string name="wallet_addresses_fragment_add_dialog_message">A Dimecoin címek nem törölhetők. Új címet akarsz hozzáadni a tárcádhoz?</string>
-	<string name="wallet_balance_fragment_replaying">A frissítés során az egyenleg nem elérhető.</string>
 	<string name="exchange_rates_activity_title">Árfolyamok</string>
 	<string name="exchange_rates_fragment_empty_text">Az árfolyamok betöltése sikertelen</string>
 	<string name="exchange_rates_fragment_default">(alapértelmezett)</string>
@@ -49,8 +48,6 @@
 	<string name="wallet_version_dialog_msg">Fontos hibajavításokat tartalmaz az új verzió. A részleteket megtalálod a Google Play-en.</string>
 	<string name="wallet_version_dialog_button_market">Google Play</string>
 	<string name="wallet_version_dialog_button_binary">Letöltés</string>
-	<string name="wallet_old_sdk_dialog_title">Ez az Android verzió elavult</string>
-	<string name="wallet_old_sdk_dialog_message">Esélyes, hogy a Dimecoin Wallet alkalmazás következő változatai már nem lesznek támogatottak készülékeden. Bizonyos esetekben ez nehézkessé, vagy akár lehetetlenné is teheti az érmék használatát erről az eszközről.\n\nAjánlatos a meglévő érméidet elmentened, vagy átköltöztetned máshová, kivéve ha pontosan tudod mit teszel.</string>
 	<string name="send_coins_activity_title">Dimecoin küldése</string>
 	<string name="send_coins_fragment_receiving_address_label">Fizetés</string>
 	<string name="send_coins_fragment_receiving_address_hint">írd be a címet vagy nevet</string>
@@ -165,9 +162,7 @@
 	<string name="preferences_initiate_reset_dialog_message">Szeretnéd visszaállítani a blokkláncot és újratölteni?\n\nAz szinkronizálás ideje alatt ideiglenesen sem a tárcád egyenlege, sem a tranzakciók nem látszanak. Amint a blokklánc frissítése befejeződik az adatok visszakerülnek. </string>
 	<string name="preferences_initiate_reset_dialog_positive">Visszaállítás</string>
 	<string name="report_issue_dialog_title_issue">Hiba jelentése</string>
-	<string name="report_issue_dialog_title_crash">Az előző alkalommal a program összeomlott.</string>
 	<string name="report_issue_dialog_message_issue">Kérjük részletesen írd le a hiba körülményeit, hogy fejlesztőink megvizsgálhassák a problémát.</string>
-	<string name="report_issue_dialog_message_crash">Segítenél nekünk azzal, hogy elküldöd számunkra a hiba részleteit, hogy kijavíthassuk ezt a problémát a jövőben?</string>
 	<string name="report_issue_dialog_description">a hiba leírása</string>
 	<string name="report_issue_dialog_report">Jelentés</string>
 	<string name="report_issue_dialog_collect_device_info">Eszköz információk hozzáfűzése</string>
@@ -179,18 +174,11 @@
 	<string name="about_license_title">Licensz</string>
 	<string name="about_credits_bitcoinj_title">Az applikáció Dimecoinj %s-t használ</string>
 	<string name="about_credits_zxing_title">Ez az app \'zxing\'-et használ</string>
-	<string name="about_credits_icon_title">Az app \'bitboy\' ikonját használja</string>
-	<string name="about_community_googleplus_title">Google+ közösség</string>
-	<string name="about_community_googleplus_summary">Fórumok az applikációról</string>
-	<string name="about_author_twitter_title">A Twitter-en</string>
-	<string name="about_author_googleplus_title">A Google+-on</string>
 	<string name="about_market_app_title">Google Play oldal</string>
 	<string name="about_market_app_summary">Értékelések</string>
-	<string name="about_credits_market_publisher_title">A szerző egyéb applikációi</string>
-	<string name="notification_coins_received_msg">Fogadott mennyiség: %s</string>
+    <string name="notification_coins_received_msg">Fogadott mennyiség: %s</string>
 	<string name="notification_peers_connected_msg">%d peer kapcsolódva</string>
 	<!-- generic buttons -->
-	<string name="button_ok">OK</string>
 	<string name="button_dismiss">Elutasít</string>
 	<string name="button_cancel">Mégsem</string>
 	<string name="button_help">Segítség</string>

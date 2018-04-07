@@ -16,8 +16,7 @@
 	<string name="wallet_address_fragment_clipboard_msg">比特幣地址已經複製到剪貼簿</string>
 	<string name="wallet_addresses_fragment_add_dialog_title">新增比特幣地址</string>
 	<string name="wallet_addresses_fragment_add_dialog_message">比特幣地址無法刪除。是否要新增新的地址到你的錢包?</string>
-	<string name="wallet_balance_fragment_replaying">重播中餘額無法展示</string>
-	<string name="exchange_rates_activity_title">匯率</string>
+    <string name="exchange_rates_activity_title">匯率</string>
 	<string name="exchange_rates_fragment_empty_text">無法取得匯率</string>
 	<string name="exchange_rates_fragment_default">(預設)</string>
 	<string name="exchange_rates_fragment_rate">匯率</string>
@@ -47,9 +46,7 @@
 	<string name="wallet_version_dialog_msg">這版本修正重要的錯誤，細節請參閱Google Play上說明。</string>
 	<string name="wallet_version_dialog_button_market">Google Play</string>
 	<string name="wallet_version_dialog_button_binary">下載</string>
-	<string name="wallet_old_sdk_dialog_title">Android 版本太舊</string>
-	<string name="wallet_old_sdk_dialog_message">很可能下個版本的 Dimecoin Wallet App 將不再支援你的裝置，某些狀況下可能導致難以付款，\n\n除非你確認其中風險，不然建議你儘快將錢包的錢轉出。</string>
-	<string name="send_coins_activity_title">比特幣付款</string>
+    <string name="send_coins_activity_title">比特幣付款</string>
 	<string name="send_coins_fragment_receiving_address_label">付給</string>
 	<string name="send_coins_fragment_receiving_address_hint">輸入地址或是名稱</string>
 	<string name="send_coins_fragment_receiving_address_error">無效比特幣地址!</string>
@@ -160,10 +157,8 @@
 	<string name="preferences_initiate_reset_dialog_message">你是否要重置區塊鏈?\n\n這個動作會暫時導致錢包餘額不顯示以及交易資料被移除的現象，這兩個資訊需要等到區塊鏈同步完成才會恢復。</string>
 	<string name="preferences_initiate_reset_dialog_positive">重設</string>
 	<string name="report_issue_dialog_title_issue">問題報告</string>
-	<string name="report_issue_dialog_title_crash">發現前次當機</string>
-	<string name="report_issue_dialog_message_issue">請描述問題讓開發者可以重現問題來修復</string>
-	<string name="report_issue_dialog_message_crash">你是否要寄送當機報告幫助解決問題?</string>
-	<string name="report_issue_dialog_description">問題描述</string>
+    <string name="report_issue_dialog_message_issue">請描述問題讓開發者可以重現問題來修復</string>
+    <string name="report_issue_dialog_description">問題描述</string>
 	<string name="report_issue_dialog_report">報告</string>
 	<string name="report_issue_dialog_collect_device_info">附加裝置資訊</string>
 	<string name="report_issue_dialog_collect_installed_packages">附加安裝app列表</string>
@@ -174,20 +169,13 @@
 	<string name="about_license_title">授權</string>
 	<string name="about_credits_bitcoinj_title">本 app 使用 Dimecoinj %s</string>
 	<string name="about_credits_zxing_title">"本 app 使用 'zxing'"</string>
-	<string name="about_credits_icon_title">"本 app 使用圖標來自'bitboy'"</string>
-	<string name="about_community_googleplus_title">Google+ 社群</string>
-	<string name="about_community_googleplus_summary">討論本 app</string>
-	<string name="about_author_twitter_title">作者的 Twitter</string>
-	<string name="about_author_googleplus_title">作者的 Google+</string>
-	<string name="about_market_app_title">Google Play 頁面</string>
+    <string name="about_market_app_title">Google Play 頁面</string>
 	<string name="about_market_app_summary">app評分</string>
-	<string name="about_credits_market_publisher_title">作者其他App</string>
-	<string name="notification_coins_received_msg">收到 %s</string>
+    <string name="notification_coins_received_msg">收到 %s</string>
 	<string name="notification_peers_connected_msg">%d 節點連線</string>
 
 	<!-- generic buttons -->
-	<string name="button_ok">OK</string>
-	<string name="button_dismiss">取消</string>
+    <string name="button_dismiss">取消</string>
 	<string name="button_cancel">取消</string>
 	<string name="button_help">幫助</string>
 	<string name="button_add">新增</string>

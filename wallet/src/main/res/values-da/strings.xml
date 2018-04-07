@@ -16,8 +16,7 @@
 	<string name="wallet_address_fragment_clipboard_msg">Dimecoin-adresse kopieret til udklipsholder</string>
 	<string name="wallet_addresses_fragment_add_dialog_title">Tilføj Dimecoin-adresse</string>
 	<string name="wallet_addresses_fragment_add_dialog_message">Dimecoin-adresser kan ikke slettes. Vil du tilføje en ny adresse til din tegnebog?</string>
-	<string name="wallet_balance_fragment_replaying">Saldo er ikke tilgængelig under genafspilning.</string>
-	<string name="exchange_rates_activity_title">Valutakurser</string>
+    <string name="exchange_rates_activity_title">Valutakurser</string>
 	<string name="exchange_rates_fragment_empty_text">Kunne ikke indlæse valutakurser</string>
 	<string name="exchange_rates_fragment_default">(standard)</string>
 	<string name="exchange_rates_fragment_rate">kurs</string>
@@ -47,9 +46,7 @@
 	<string name="wallet_version_dialog_msg">Denne version retter vigtige fejl. For detaljer, se ændringsloggen på Google Play.</string>
 	<string name="wallet_version_dialog_button_market">Google Play</string>
 	<string name="wallet_version_dialog_button_binary">Download</string>
-	<string name="wallet_old_sdk_dialog_title">Android-version er uddateret</string>
-	<string name="wallet_old_sdk_dialog_message">Der er risiko for, at en af de næste udgivelser af Dimecoin Wallet ikke vil understøtte din enhed længere. I nogle tilfælde kan det være svært at bruge mønter på denne enhed.\n\nMed mindre du ved hvad du gør, anbefales det snart at flytte dine mønter væk.</string>
-	<string name="send_coins_activity_title">Send Dimecoins</string>
+    <string name="send_coins_activity_title">Send Dimecoins</string>
 	<string name="send_coins_fragment_receiving_address_label">Betal til</string>
 	<string name="send_coins_fragment_receiving_address_hint">skriv adresse eller navn</string>
 	<string name="send_coins_fragment_receiving_address_error">Ugyldig Dimecoin-adresse!</string>
@@ -160,10 +157,8 @@
 	<string name="preferences_initiate_reset_dialog_message">Vil du nulstille og genafspille blokkæden?\n\nDette vil midlertidigt skjule din tegnebogssaldo og fjerne transaktioner. Begge dele vil genskabes efterhånden som blokkæden synkroniseres.</string>
 	<string name="preferences_initiate_reset_dialog_positive">Nulstil</string>
 	<string name="report_issue_dialog_title_issue">Rapportér fejl</string>
-	<string name="report_issue_dialog_title_crash">Tidligere programnedbrud opfanget</string>
-	<string name="report_issue_dialog_message_issue">Beskriv venligst fejlen så præcist, at en udvikler kan genskabe den.</string>
-	<string name="report_issue_dialog_message_crash">Vil du sende en nedbrudsrapport for at hjælpe med at rette op på fejlen i fremtiden?</string>
-	<string name="report_issue_dialog_description">fejlbeskrivelse</string>
+    <string name="report_issue_dialog_message_issue">Beskriv venligst fejlen så præcist, at en udvikler kan genskabe den.</string>
+    <string name="report_issue_dialog_description">fejlbeskrivelse</string>
 	<string name="report_issue_dialog_report">Rapport</string>
 	<string name="report_issue_dialog_collect_device_info">Tilføj enhedsinformation</string>
 	<string name="report_issue_dialog_collect_installed_packages">Tilføj liste over installerede pakker</string>
@@ -174,20 +169,13 @@
 	<string name="about_license_title">Licens</string>
 	<string name="about_credits_bitcoinj_title">Denne app bruger Dimecoinj %s</string>
 	<string name="about_credits_zxing_title">"Denne app bruger 'zxing'"</string>
-	<string name="about_credits_icon_title">"Denne app bruger et ikon af 'bitboy'"</string>
-	<string name="about_community_googleplus_title">Google+-fællesskab</string>
-	<string name="about_community_googleplus_summary">Diskussioner om appen</string>
-	<string name="about_author_twitter_title">Forfatteren på Twitter</string>
-	<string name="about_author_googleplus_title">Forfatteren på Google+</string>
-	<string name="about_market_app_title">Google Play-side</string>
+    <string name="about_market_app_title">Google Play-side</string>
 	<string name="about_market_app_summary">Anmeld eller bedøm appen</string>
-	<string name="about_credits_market_publisher_title">Andre apps af forfatteren</string>
-	<string name="notification_coins_received_msg">Modtog %s</string>
+    <string name="notification_coins_received_msg">Modtog %s</string>
 	<string name="notification_peers_connected_msg">%d peers forbundet</string>
 
 	<!-- generic buttons -->
-	<string name="button_ok">O.k.</string>
-	<string name="button_dismiss">Afvis</string>
+    <string name="button_dismiss">Afvis</string>
 	<string name="button_cancel">Annullér</string>
 	<string name="button_help">Hjælp</string>
 	<string name="button_add">Tilføj</string>

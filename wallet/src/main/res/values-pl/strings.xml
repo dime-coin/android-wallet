@@ -16,8 +16,7 @@
 	<string name="wallet_address_fragment_clipboard_msg">Adres Dimecoin skopiowano do schowka</string>
 	<string name="wallet_addresses_fragment_add_dialog_title">Dodaj adres Dimecoin</string>
 	<string name="wallet_addresses_fragment_add_dialog_message">Adresy Dimecoin nie mogą zostać usunięte. Czy chcesz dodać nowy adres do portfela?</string>
-	<string name="wallet_balance_fragment_replaying">Saldo nie jest dostępne w trakcie odtwarzania.</string>
-	<string name="exchange_rates_activity_title">Kursy wymiany walut</string>
+    <string name="exchange_rates_activity_title">Kursy wymiany walut</string>
 	<string name="exchange_rates_fragment_empty_text">Załadowanie kursu wymiany walut nie powiodło się</string>
 	<string name="exchange_rates_fragment_default">(domyślnie)</string>
 	<string name="exchange_rates_fragment_rate">kurs</string>
@@ -47,9 +46,7 @@
 	<string name="wallet_version_dialog_msg">W tej wersji poprawiono ważne błędy. Więcej szczegółów znajdziesz w dzienniku zmian na Google Play.</string>
 	<string name="wallet_version_dialog_button_market">Google Play</string>
 	<string name="wallet_version_dialog_button_binary">Pobierz</string>
-	<string name="wallet_old_sdk_dialog_title">Wersja Androida jest przestarzała</string>
-	<string name="wallet_old_sdk_dialog_message">Istnieje szansa że wraz z kolejnymi wydaniami Dimecoin Wallet zakończy wsparcie dla twojego urządzenia. W niektórych przypadkach wydawanie monet z tego urządzenia może ulec utrudnieniu.\n\nZalecane jest przeniesienie swoich monet w najbliższym czasie, chyba że wiesz co robisz.</string>
-	<string name="send_coins_activity_title">Wyślij Dimecoiny</string>
+    <string name="send_coins_activity_title">Wyślij Dimecoiny</string>
 	<string name="send_coins_fragment_receiving_address_label">Zapłać dla</string>
 	<string name="send_coins_fragment_receiving_address_hint">wpisz adres lub nazwę</string>
 	<string name="send_coins_fragment_receiving_address_error">Nieprawidłowy adres Dimecoin!</string>
@@ -162,10 +159,8 @@
 	<string name="preferences_initiate_reset_dialog_message">Czy chcesz zresetować i re-synchronizować łańcuch bloków?\n\nTa czynność tymczasowo wyzeruje saldo portfela i usunie transakcje. Zostaną one przywrócone wraz z postępem synchronizacji łańcucha bloków.</string>
 	<string name="preferences_initiate_reset_dialog_positive">Resetuj</string>
 	<string name="report_issue_dialog_title_issue">Zgłoś problem</string>
-	<string name="report_issue_dialog_title_crash">Wykryto poprzednią awarię</string>
-	<string name="report_issue_dialog_message_issue">Opisz proszę problem na tyle dokładnie by twórca mógł go odtworzyć.</string>
-	<string name="report_issue_dialog_message_crash">Czy chcesz wysłać raport o błędzie, by pomóc naprawić ten problem?</string>
-	<string name="report_issue_dialog_description">opis problemu</string>
+    <string name="report_issue_dialog_message_issue">Opisz proszę problem na tyle dokładnie by twórca mógł go odtworzyć.</string>
+    <string name="report_issue_dialog_description">opis problemu</string>
 	<string name="report_issue_dialog_report">Zgłoś</string>
 	<string name="report_issue_dialog_collect_device_info">Dołącz informacje o urządzeniu</string>
 	<string name="report_issue_dialog_collect_installed_packages">Dodaj listę zainstalowanych pakietów</string>
@@ -177,20 +172,13 @@
 
 	<string name="about_credits_bitcoinj_title">Ta aplikacja korzysta z \'Dimecoinj\'</string>
 	<string name="about_credits_zxing_title">Ta aplikacja korzysta z \'zxing\'</string>
-	<string name="about_credits_icon_title">Ta aplikacja korzysta z ikon od \'bitboy\'</string>
-	<string name="about_community_googleplus_title">Społeczność Google+</string>
-	<string name="about_community_googleplus_summary">Dyskusje dotyczące aplikacji</string>
-	<string name="about_author_twitter_title">Autor na Twitter</string>
-	<string name="about_author_googleplus_title">Autor na Google+</string>
-	<string name="about_market_app_title">Strona Google Play</string>
+    <string name="about_market_app_title">Strona Google Play</string>
 	<string name="about_market_app_summary">Wyraź swoją opinię o Aplikacji lub ją oceń</string>
-	<string name="about_credits_market_publisher_title">Inne aplikacje tego samego autora</string>
-	<string name="notification_coins_received_msg">Otrzymano %s </string>
+    <string name="notification_coins_received_msg">Otrzymano %s </string>
 	<string name="notification_peers_connected_msg">%d połączonych partnerów</string>
 
 	<!-- generic buttons -->
-	<string name="button_ok">OK</string>
-	<string name="button_dismiss">Odrzuć</string>
+    <string name="button_dismiss">Odrzuć</string>
 	<string name="button_cancel">Anuluj</string>
 	<string name="button_help">Pomoc</string>
 	<string name="button_add">Dodaj</string>

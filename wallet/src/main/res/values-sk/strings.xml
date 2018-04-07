@@ -16,8 +16,7 @@
 	<string name="wallet_address_fragment_clipboard_msg">Adresa skopírovaná do schránky</string>
 	<string name="wallet_addresses_fragment_add_dialog_title">Pridať Dimecoin adresu</string>
 	<string name="wallet_addresses_fragment_add_dialog_message">Dimecoin adresa sa nedá zmazať. Chcete pridať do peňaženky novú adresu?</string>
-	<string name="wallet_balance_fragment_replaying">Zostatok je nedostupný počas synchronizácie.</string>
-	<string name="exchange_rates_activity_title">Výmenné kurzy</string>
+    <string name="exchange_rates_activity_title">Výmenné kurzy</string>
 	<string name="exchange_rates_fragment_empty_text">Nepodarilo sa načítať výmenné kurzy</string>
 	<string name="exchange_rates_fragment_default">(predvolené)</string>
 	<string name="exchange_rates_fragment_rate">kurz</string>
@@ -47,9 +46,7 @@
 	<string name="wallet_version_dialog_msg">Táto verzia opravuje kritické chyby. Pre viac informácií navštívte Google Play.</string>
 	<string name="wallet_version_dialog_button_market">Google Play</string>
 	<string name="wallet_version_dialog_button_binary">Stiahnuť</string>
-	<string name="wallet_old_sdk_dialog_title">Verzia vášho Androidu je zastaralá</string>
-	<string name="wallet_old_sdk_dialog_message">Je možné, že v novších verziách Dimecoin Wallet už nebude podporované vaše zariadenie. V určitých prípadoch môže byť obtiažne minúť Dimecoiny z tohto zariadenia.\n\nJe odporúčané presunúť Dimecoiny z tohto zariadenia.</string>
-	<string name="send_coins_activity_title">Poslať Dimecoiny</string>
+    <string name="send_coins_activity_title">Poslať Dimecoiny</string>
 	<string name="send_coins_fragment_receiving_address_label">Zaplatiť</string>
 	<string name="send_coins_fragment_receiving_address_hint">zadajte adresu alebo názov</string>
 	<string name="send_coins_fragment_receiving_address_error">Nesprávna Dimecoin adresa!</string>
@@ -160,10 +157,8 @@
 	<string name="preferences_initiate_reset_dialog_message">Chcete resetovať a znovu načítať blockchain?\n\nTáto operácia dočasne skryje zostatok a transakcie vo vašej peňaženke. Oboje sa opäť obnoví, keď sa blockchain synchronizuje.</string>
 	<string name="preferences_initiate_reset_dialog_positive">Reset</string>
 	<string name="report_issue_dialog_title_issue">Nahlásiť problém</string>
-	<string name="report_issue_dialog_title_crash">Zistené predchádzajúce zlyhanie aplikácie</string>
-	<string name="report_issue_dialog_message_issue">Prosím presne popíšte váš problém, aby ho vývojári vedeli zreprodukovať.</string>
-	<string name="report_issue_dialog_message_crash">Chcete odoslať správu o probléme a tým pomôcť opraviť tento problém?</string>
-	<string name="report_issue_dialog_description">popis problému</string>
+    <string name="report_issue_dialog_message_issue">Prosím presne popíšte váš problém, aby ho vývojári vedeli zreprodukovať.</string>
+    <string name="report_issue_dialog_description">popis problému</string>
 	<string name="report_issue_dialog_report">Odoslať</string>
 	<string name="report_issue_dialog_collect_device_info">Pripojiť informácie o zariadení</string>
 	<string name="report_issue_dialog_collect_installed_packages">Pripojiť zoznam nainštalovaných balíčkov</string>
@@ -174,19 +169,12 @@
 	<string name="about_license_title">Licencia</string>
 	<string name="about_credits_bitcoinj_title">Táto aplikácia používa Dimecoinj %s</string>
 	<string name="about_credits_zxing_title">Táto aplikácia používa \'zxing\'</string>
-	<string name="about_credits_icon_title">Táto aplikácia používa ikonu od \'bitboy\'</string>
-	<string name="about_community_googleplus_title">Google+ Komunita</string>
-	<string name="about_community_googleplus_summary">Diskusie o aplikácii</string>
-	<string name="about_author_twitter_title">Twitter autora</string>
-	<string name="about_author_googleplus_title">Autor na Google+</string>
-	<string name="about_market_app_title">Google Play stránka</string>
+    <string name="about_market_app_title">Google Play stránka</string>
 	<string name="about_market_app_summary">Ohodnotiť aplikáciu</string>
-	<string name="about_credits_market_publisher_title">Ďalšie aplikácie autora</string>
-	<string name="notification_coins_received_msg">Prijaté %s</string>
+    <string name="notification_coins_received_msg">Prijaté %s</string>
 	<string name="notification_peers_connected_msg">%d pripojených uzlov</string>
 	<!-- generic buttons -->
-	<string name="button_ok">OK</string>
-	<string name="button_dismiss">Zrušiť</string>
+    <string name="button_dismiss">Zrušiť</string>
 	<string name="button_cancel">Zrušiť</string>
 	<string name="button_help">Nápoveda</string>
 	<string name="button_add">Pridať</string>

@@ -16,7 +16,6 @@
 	<string name="wallet_address_fragment_clipboard_msg">Bitmonadreso kopiita al tondujo</string>
 	<string name="wallet_addresses_fragment_add_dialog_title">Aldoni Bitmonadreson</string>
 	<string name="wallet_addresses_fragment_add_dialog_message">Bitmonadresoj ne povas esti forigitaj. Ĉu vi volas aldoni novan adreson al via monujo?</string>
-	<string name="wallet_balance_fragment_replaying">Saldo nedisponeblas dum ripeto.</string>
 	<string name="exchange_rates_activity_title">Kurzoj</string>
 	<string name="exchange_rates_fragment_empty_text">Ne eblis ŝargi kurzojn.</string>
 	<string name="exchange_rates_fragment_default">(defaŭlta)</string>
@@ -47,8 +46,6 @@
 	<string name="wallet_version_dialog_msg">Tiu versio korektas gravajn cimojn. Por detaloj, vidu la ŝanĝan loglibron ĉe Google Play.</string>
 	<string name="wallet_version_dialog_button_market">Google Play</string>
 	<string name="wallet_version_dialog_button_binary">Elŝuti</string>
-	<string name="wallet_old_sdk_dialog_title">Androida versio eksdatas</string>
-	<string name="wallet_old_sdk_dialog_message">Estas verŝajne, ke unu de la sekvantaj versioj de BitmonMonujo ne subtenos vian aparaton. En iuj kazoj, ĝi povas esti malfacile elspezi monoj sur tiu aparato. \n\nSe vi ne scias kion vi faras, ĝi estas rekomendita movi viajn monojn frue.</string>
 	<string name="send_coins_activity_title">Sendi Bitmonojn</string>
 	<string name="send_coins_fragment_receiving_address_label">Pagu al</string>
 	<string name="send_coins_fragment_receiving_address_hint">tajpu adreson aŭ nomon</string>
@@ -160,9 +157,7 @@
 	<string name="preferences_initiate_reset_dialog_message">Ĉu vi volus reŝargi la blokĉenon?\n\nTio provizore kaŝi vian monujo-saldo kaj forigi transakciojn. Ambaŭ reiros kiel blokĉena sinkronigo progresas.</string>
 	<string name="preferences_initiate_reset_dialog_positive">Reŝargi</string>
 	<string name="report_issue_dialog_title_issue">Reporti aferon</string>
-	<string name="report_issue_dialog_title_crash">Malantaŭa kraŝo detektita</string>
 	<string name="report_issue_dialog_message_issue">Bonvolu priskribi vian temon ĝuste sufiĉa tiel programisto povas reprodukti.</string>
-	<string name="report_issue_dialog_message_crash">Ĉu vi volus sendi kraŝraporton, helpante ripari tiun aferon en la estonteco?</string>
 	<string name="report_issue_dialog_description">afera priskribo</string>
 	<string name="report_issue_dialog_report">Reporti</string>
 	<string name="report_issue_dialog_collect_device_info">Postglui aparatajn informojn</string>
@@ -174,19 +169,12 @@
 	<string name="about_license_title">Licenco</string>
 	<string name="about_credits_bitcoinj_title">Ĉi tiu aplikaĵo uzas Dimecoinj-n %s</string>
 	<string name="about_credits_zxing_title">Ĉi tiu aplikaĵo uzas \'zxing\'-n</string>
-	<string name="about_credits_icon_title">Ĉi tiu aplikaĵo uzas bildsimbolon per \'bitboy\'</string>
-	<string name="about_community_googleplus_title">\"Google+\" Komunumo</string>
-	<string name="about_community_googleplus_summary">Diskutoj pri l\'aplikaĵo</string>
-	<string name="about_author_twitter_title">Aŭtoro ĉe Twitter</string>
-	<string name="about_author_googleplus_title">Aŭtoro ĉe Google+</string>
 	<string name="about_market_app_title">\"Google Play\" Paĝo</string>
 	<string name="about_market_app_summary">Revui aŭ gradi l\'aplikaĵon</string>
-	<string name="about_credits_market_publisher_title">Aliaj aplikaĵoj de Aŭtoro</string>
-	<string name="notification_coins_received_msg">Ricevita %s</string>
+    <string name="notification_coins_received_msg">Ricevita %s</string>
 	<string name="notification_peers_connected_msg">%d pajroj konektitaj</string>
 
 	<!-- generic buttons -->
-	<string name="button_ok">Jes</string>
 	<string name="button_dismiss">Eksigi</string>
 	<string name="button_cancel">Nuligi</string>
 	<string name="button_help">Helpo</string>

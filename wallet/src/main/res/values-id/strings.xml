@@ -16,7 +16,6 @@
 	<string name="wallet_address_fragment_clipboard_msg">Alamat Dimecoin disalin</string>
 	<string name="wallet_addresses_fragment_add_dialog_title">Tambahkan alamat Dimecoin</string>
 	<string name="wallet_addresses_fragment_add_dialog_message">Alamat Dimecoin tidak dapat dihapus. Apakah Anda ingin menambahkan alamat baru?</string>
-	<string name="wallet_balance_fragment_replaying">Saldo tidak tersedia saat pengulangan.</string>
 	<string name="exchange_rates_activity_title">Nilai Tukar</string>
 	<string name="exchange_rates_fragment_empty_text">Tidak dapat memuat nilai tukar</string>
 	<string name="exchange_rates_fragment_default">(standar)</string>
@@ -48,8 +47,6 @@
 	<string name="wallet_version_dialog_msg">Versi ini perbaikan bug penting. Untuk rincian, lihatlah catatan perubahan di Google Play.</string>
 	<string name="wallet_version_dialog_button_market">Google Play</string>
 	<string name="wallet_version_dialog_button_binary">Unduh</string>
-	<string name="wallet_old_sdk_dialog_title">Versi Android kedaluwarsa</string>
-	<string name="wallet_old_sdk_dialog_message">Salah satu kemungkinan Dimecoin Wallet versi akan datang tidak akan mendukung ponsel Anda lagi. Dalam beberapa kasus, akan sulit untuk menggunakan koin di ponsel ini.\n\nKecuali Anda tahu apa yang Anda lakukan, sangat direkomendasikan untuk segera memindahkan koin Anda.</string>
 	<string name="send_coins_activity_title">Kirim Dimecoin</string>
 	<string name="send_coins_fragment_receiving_address_label">Bayar ke</string>
 	<string name="send_coins_fragment_receiving_address_hint">masukkan alamat atau nama</string>
@@ -157,9 +154,7 @@
 	<string name="preferences_initiate_reset_dialog_message">Apakah Anda ingin mengatur-ulang untuk pengulangan rantai-blok?\n\nIni akan menyembunyikan saldo Anda dan hapus transaksi sementara. Keduanya akan pulih setelah rantai-blok sinkron.</string>
 	<string name="preferences_initiate_reset_dialog_positive">Atur-ulang</string>
 	<string name="report_issue_dialog_title_issue">Laporkan masalah</string>
-	<string name="report_issue_dialog_title_crash">Kesalahan terdeteksi</string>
 	<string name="report_issue_dialog_message_issue">Mohon jelaskan masalah Anda dgn jelas sehingga pengembang bisa perbaiki.</string>
-	<string name="report_issue_dialog_message_crash">Apakah Anda ingin kirim laporan kesalahan, bantu perbaiki masalah ini di akan datang?</string>
 	<string name="report_issue_dialog_description">Penjelasan masalah</string>
 	<string name="report_issue_dialog_report">Laporkan</string>
 	<string name="report_issue_dialog_collect_device_info">Tambahkan informasi ponsel</string>
@@ -170,16 +165,11 @@
 	<string name="about_license_title">Lisensi</string>
 	<string name="about_credits_bitcoinj_title">Apl ini menggunakan Dimecoinj %s</string>
 	<string name="about_credits_zxing_title">Apl ini menggunakan \'zxing\'</string>
-	<string name="about_credits_icon_title">Apl ini menggunakan ikon oleh \'bitboy\'</string>
-	<string name="about_author_twitter_title">Pembuat di Twitter</string>
-	<string name="about_author_googleplus_title">Pembuat di Google+</string>
 	<string name="about_market_app_title">Halaman Apl Google Play</string>
-	<string name="about_credits_market_publisher_title">Apl lain oleh Pembuat</string>
-	<string name="notification_coins_received_msg">Diterima %s</string>
+    <string name="notification_coins_received_msg">Diterima %s</string>
 	<string name="notification_peers_connected_msg">%d peer terhubung</string>
 
 	<!-- generic buttons -->
-	<string name="button_ok">IYA</string>
 	<string name="button_dismiss">Tolak</string>
 	<string name="button_cancel">Batal</string>
 	<string name="button_help">Bantuan</string>

@@ -67,7 +67,6 @@ public class Constants
 	public static final int MAX_NUM_CONFIRMATIONS = 7;
 	public static final String USER_AGENT = CoinDefinition.coinName +" Wallet";
 	public static final String DEFAULT_EXCHANGE_CURRENCY = "USD";
-	public static final int WALLET_OPERATION_STACK_SIZE = 256 * 1024;
 	public static final long BLOCKCHAIN_STATE_BROADCAST_THROTTLE_MS = DateUtils.SECOND_IN_MILLIS;
 	public static final long BLOCKCHAIN_UPTODATE_THRESHOLD_MS = DateUtils.HOUR_IN_MILLIS;
 
@@ -90,38 +89,27 @@ public class Constants
 	public static final int LOCAL_PRECISION = 6;        //Dimecoin Quark in BTC, USD, etc
 
 	public static final String DONATION_ADDRESS = CoinDefinition.DONATION_ADDRESS;
-	public static final String REPORT_EMAIL = "hashengineeringsolutions@gmail.com";
+	public static final String REPORT_EMAIL = "support@dimecoin.com.co";
 
 	public static final String REPORT_SUBJECT_ISSUE = "Reported issue";
-	public static final String REPORT_SUBJECT_CRASH = "Crash report";
 
-	public static final String LICENSE_URL = "http://www.gnu.org/licenses/gpl-3.0.txt";
+	public static final String LICENSE_URL = "https://www.gnu.org/licenses/gpl-3.0.txt";
     public static final String FORKED_FROM_SOURCE = "based on bitcoin-wallet 3.31\n";
     public static final String FORKED_FROM_SOURCE_BITCOINJ = "based on bitcoinj 0.12\n";
-	public static final String SOURCE_URL = "https://github.com/HashEngineering/" + CoinDefinition.coinInternalName.toLowerCase() + "-wallet";
-	public static final String BINARY_URL = "http://code.google.com/p/bitcoin-wallet/downloads/list";
-	public static final String CREDITS_BITCOINJ_URL = "https://github.com/HashEngineering/" + CoinDefinition.coinInternalName.toLowerCase() + "j";
-	public static final String CREDITS_ZXING_URL = "http://code.google.com/p/zxing/";
-    public static final String CREDITS_WEBSITE_URL = "http://www.qrk.cc/";
-    public static final String CREDITS_FORUM_URL = "http://forum.qrk.cc/";
-	public static final String CREDITS_ICON_URL = "https://bitcointalk.org/index.php?action=profile;u=2062";
-
-	public static final String AUTHOR_TWITTER_URL = "https://twitter.com/#!/HashEngineering";
-	public static final String AUTHOR_GOOGLEPLUS_URL = "https://profiles.google.com/HashEngineering";
-
-	public static final String COMMUNITY_GOOGLEPLUS_URL = "https://plus.google.com/communities/105515929887248493912";
+	public static final String SOURCE_URL = "https://github.com/dime-coin/android-wallet";
+	public static final String BINARY_URL = "https://code.google.com/p/dimecoin-wallet/downloads/list";
+	public static final String CREDITS_BITCOINJ_URL = "https://github.com/dime-coin/dimecoinj";
+	public static final String CREDITS_ZXING_URL = "https://code.google.com/p/zxing/";
+    public static final String CREDITS_WEBSITE_URL = "https://dimecoin.com.co";
 
 	public static final String MARKET_APP_URL = "market://details?id=%s";
 	public static final String WEBMARKET_APP_URL = "https://play.google.com/store/apps/details?id=%s";
-	public static final String MARKET_PUBLISHER_URL = "market://search?q=pub:\"HashEngineering\"";
 
-	public static final String VERSION_URL = "http://wallet.schildbach.de/version";
 	public static final int HTTP_TIMEOUT_MS = 15 * (int) DateUtils.SECOND_IN_MILLIS;
 
 	public static final long LAST_USAGE_THRESHOLD_JUST_MS = DateUtils.HOUR_IN_MILLIS;
 	public static final long LAST_USAGE_THRESHOLD_RECENTLY_MS = 2 * DateUtils.DAY_IN_MILLIS;
 
-	public static final int SDK_JELLY_BEAN = 16;
 	public static final int SDK_JELLY_BEAN_MR2 = 18;
 
 	public static final int MEMORY_CLASS_LOWEND = 48;

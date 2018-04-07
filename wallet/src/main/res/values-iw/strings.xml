@@ -42,8 +42,6 @@
 	<string name="wallet_version_dialog_msg">גירסה זו מתקנת באגים חשובים, לפרטים גש לדף האפליקציה.</string>
 	<string name="wallet_version_dialog_button_market">Google Play</string>
 	<string name="wallet_version_dialog_button_binary">הורדה</string>
-	<string name="wallet_old_sdk_dialog_title">גירסת אנדרויד לא מעודכנת</string>
-	<string name="wallet_old_sdk_dialog_message">סיכוי סביר כי מכשירך לא יתמך מהגירסה הבאה, המומלץ כי תעביר את כספך לארנק חלופי</string>
 	<string name="send_coins_activity_title">שלח ביטקוין</string>
 	<string name="send_coins_fragment_receiving_address_label">שלם ל</string>
 	<string name="send_coins_fragment_receiving_address_hint">הקש כתובת או שם</string>
@@ -136,9 +134,7 @@
 	<string name="preferences_initiate_reset_dialog_message">האם לאפס ולשחזר את שרשרת הבלוקים ? הדבר יקח זמן מה ויאפס את יתרתך באופן זמני</string>
 	<string name="preferences_initiate_reset_dialog_positive">איפוס</string>
 	<string name="report_issue_dialog_title_issue">דווח תקלה</string>
-	<string name="report_issue_dialog_title_crash">תקלה קודמת נתגלתה</string>
 	<string name="report_issue_dialog_message_issue">אנא תאר את הבעיה בה נתקלת</string>
-	<string name="report_issue_dialog_message_crash">האם לשלוח דיווח תקלה ?</string>
 	<string name="report_issue_dialog_description">תיאור הבעיה</string>
 	<string name="report_issue_dialog_report">דיווח</string>
 	<string name="report_issue_dialog_collect_device_info">הוסף מידע על המכשיר</string>
@@ -149,16 +145,11 @@
 	<string name="about_license_title">רישיון</string>
 	<string name="about_credits_bitcoinj_title">This app is using Dimecoinj %s</string>
 	<string name="about_credits_zxing_title">"This app is using 'zxing'"</string>
-	<string name="about_credits_icon_title">"This app is using an icon by 'tjb0607'"</string>
-	<string name="about_author_twitter_title">Author at Twitter</string>
-	<string name="about_author_googleplus_title">Author at Google+</string>
 	<string name="about_market_app_title">Google Play App Page</string>
-	<string name="about_credits_market_publisher_title">Other Apps of Author</string>
-	<string name="notification_coins_received_msg">נתקבלו %s</string>
+    <string name="notification_coins_received_msg">נתקבלו %s</string>
 	<string name="notification_peers_connected_msg">%d שכנים מחוברים</string>
 
 	<!-- generic buttons -->
-	<string name="button_ok">אישור</string>
 	<string name="button_dismiss">התעלם</string>
 	<string name="button_cancel">בטל</string>
 	<string name="button_help">עזרה</string>

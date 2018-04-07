@@ -41,15 +41,9 @@ public final class AboutActivity extends PreferenceActivity
 	private static final String KEY_ABOUT_LICENSE = "about_license";
 	private static final String KEY_ABOUT_SOURCE = "about_source";
 	private static final String KEY_ABOUT_MARKET_APP = "about_market_app";
-	private static final String KEY_ABOUT_COMMUNITY_GOOGLEPLUS = "about_community_googleplus";
-	private static final String KEY_ABOUT_AUTHOR_TWITTER = "about_author_twitter";
-	private static final String KEY_ABOUT_AUTHOR_GOOGLEPLUS = "about_author_googleplus";
-	private static final String KEY_ABOUT_MARKET_PUBLISHER = "about_market_publisher";
     private static final String KEY_ABOUT_CREDITS_WEBSITE = "about_credits_website";
-    private static final String KEY_ABOUT_CREDITS_FORUM = "about_credits_forum";
  	private static final String KEY_ABOUT_CREDITS_BITCOINJ = "about_credits_bitcoinj";
 	private static final String KEY_ABOUT_CREDITS_ZXING = "about_credits_zxing";
-	private static final String KEY_ABOUT_CREDITS_ICON = "about_credits_icon";
 
 	@Override
 	protected void onCreate(final Bundle savedInstanceState)
@@ -62,17 +56,12 @@ public final class AboutActivity extends PreferenceActivity
 		findPreference(KEY_ABOUT_LICENSE).setSummary(Constants.LICENSE_URL);
 		findPreference(KEY_ABOUT_SOURCE).setSummary(Constants.FORKED_FROM_SOURCE +Constants.SOURCE_URL);
 
-		findPreference(KEY_ABOUT_MARKET_PUBLISHER).setSummary(Constants.MARKET_PUBLISHER_URL);
-
 		findPreference(KEY_ABOUT_CREDITS_BITCOINJ).setTitle(getString(R.string.about_credits_bitcoinj_title, VersionMessage.BITCOINJ_VERSION));
 		findPreference(KEY_ABOUT_CREDITS_BITCOINJ).setSummary(Constants.FORKED_FROM_SOURCE_BITCOINJ+Constants.CREDITS_BITCOINJ_URL);
 		findPreference(KEY_ABOUT_CREDITS_ZXING).setSummary(Constants.CREDITS_ZXING_URL);
 
-		//findPreference(KEY_ABOUT_CREDITS_ICON).setSummary(Constants.CREDITS_ICON_URL);
 		findPreference(KEY_ABOUT_MARKET_APP).setSummary(String.format(Constants.MARKET_APP_URL, getPackageName()));
-		//findPreference(KEY_ABOUT_MARKET_PUBLISHER).setSummary(Constants.MARKET_PUBLISHER_URL);
         findPreference(KEY_ABOUT_CREDITS_WEBSITE).setSummary(Constants.CREDITS_WEBSITE_URL);
-        findPreference(KEY_ABOUT_CREDITS_FORUM).setSummary(Constants.CREDITS_FORUM_URL);
 
 	}
 
@@ -112,36 +101,11 @@ public final class AboutActivity extends PreferenceActivity
 				startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(String.format(Constants.WEBMARKET_APP_URL, getPackageName()))));
 			finish();
 		}
-		else if (KEY_ABOUT_COMMUNITY_GOOGLEPLUS.equals(key))
-		{
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.COMMUNITY_GOOGLEPLUS_URL)));
-            finish();
-        }
         else if (KEY_ABOUT_CREDITS_WEBSITE.equals(key))
         {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.CREDITS_WEBSITE_URL)));
             finish();
         }
-        else if (KEY_ABOUT_CREDITS_FORUM.equals(key))
-        {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.CREDITS_FORUM_URL)));
-            finish();
-        }
-		else if (KEY_ABOUT_AUTHOR_TWITTER.equals(key))
-		{
-			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.AUTHOR_TWITTER_URL)));
-			finish();
-		}
-		else if (KEY_ABOUT_AUTHOR_GOOGLEPLUS.equals(key))
-		{
-			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.AUTHOR_GOOGLEPLUS_URL)));
-			finish();
-        }
-		else if (KEY_ABOUT_MARKET_PUBLISHER.equals(key))
-		{
-			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.MARKET_PUBLISHER_URL)));
-			finish();
-		}
 		else if (KEY_ABOUT_CREDITS_BITCOINJ.equals(key))
 		{
 			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.CREDITS_BITCOINJ_URL)));
@@ -152,11 +116,6 @@ public final class AboutActivity extends PreferenceActivity
 			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.CREDITS_ZXING_URL)));
 			finish();
 		}
-		/*else if (KEY_ABOUT_CREDITS_ICON.equals(key))
-		{
-			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.CREDITS_ICON_URL)));
-			finish();
-		}*/
 		return false;
 	}
 }

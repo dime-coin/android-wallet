@@ -17,8 +17,7 @@
 	<string name="wallet_addresses_fragment_add_dialog_title">Добавить Dimecoin-адрес</string>
 	<string name="wallet_addresses_fragment_add_dialog_message">Dimecoin-адреса не могут быть удалены. Хотите добавить новый адрес в Ваш бумажник?</string>
 
-	<string name="wallet_balance_fragment_replaying">Во время воспроизведения баланс недоступен.</string>
-	<string name="exchange_rates_activity_title">Обменные курсы</string>
+    <string name="exchange_rates_activity_title">Обменные курсы</string>
 	<string name="exchange_rates_fragment_empty_text">Не удалось загрузить валютный курс</string>
 	<string name="exchange_rates_fragment_default">(по умолчанию)</string>
 	<string name="exchange_rates_fragment_rate">курс</string>
@@ -48,9 +47,7 @@
 	<string name="wallet_version_dialog_msg">Эта версия исправляет важные ошибки. Детали на Google Play.</string>
 	<string name="wallet_version_dialog_button_market">Google Play</string>
 	<string name="wallet_version_dialog_button_binary">Скачать</string>
-	<string name="wallet_old_sdk_dialog_title">Версия для Android устарела</string>
-	<string name="wallet_old_sdk_dialog_message">Есть вероятность, что одна из будущих версий бумажника Dimecoin перестанет поддерживать ваше устройство. В некоторых случаях будет сложно потратить монеты с этого устройства.\n\nЕсли вы не уверены в том, что делаете, рекомендуется как можно скорее вывести монеты с устройства.</string>
-	<string name="send_coins_activity_title">Отправка Dimecoin</string>
+    <string name="send_coins_activity_title">Отправка Dimecoin</string>
 	<string name="send_coins_fragment_receiving_address_label">Оплатить</string>
 
 	<string name="send_coins_fragment_receiving_address_hint">введите адрес или имя</string>
@@ -165,10 +162,8 @@
 	<string name="preferences_initiate_reset_dialog_message">Вы действительно желаете сбросить и перезагрузить цепь блоков?\n\nЭто действие временно скроет баланс бумажника и удалит транзакции. И то, и другое восстановится по мере синхронизации цепи блоков.</string>
 	<string name="preferences_initiate_reset_dialog_positive">Сброс</string>
 	<string name="report_issue_dialog_title_issue">Сообщить о проблеме</string>
-	<string name="report_issue_dialog_title_crash">Обнаружено аварийное завершение</string>
-	<string name="report_issue_dialog_message_issue">Что бы разработчик смог воспроизвести ситуацию, пожалуйста опишите вашу проблему максимально подробно. Можно на русском, он в гугл транслейте прочитает. Не ленись, покажем чего стоят русские.</string>
-	<string name="report_issue_dialog_message_crash">Хотите отправить отчет о крахе, тем самым помогая исправить эту проблему в будущем?</string>
-	<string name="report_issue_dialog_description">описание проблемы</string>
+    <string name="report_issue_dialog_message_issue">Что бы разработчик смог воспроизвести ситуацию, пожалуйста опишите вашу проблему максимально подробно. Можно на русском, он в гугл транслейте прочитает. Не ленись, покажем чего стоят русские.</string>
+    <string name="report_issue_dialog_description">описание проблемы</string>
 	<string name="report_issue_dialog_report">Отчет</string>
 	<string name="report_issue_dialog_collect_device_info">Добавить информацию об устройстве</string>
 	<string name="report_issue_dialog_collect_installed_packages">Добавить список установленных пакетов</string>
@@ -179,17 +174,12 @@
 	<string name="about_license_title">Лицензия</string>
 	<string name="about_credits_bitcoinj_title">Это приложение использует Dimecoinj %s</string>
 	<string name="about_credits_zxing_title">Это приложение использует \'zxing\'</string>
-	<string name="about_credits_icon_title">Это приложение использует иконку от \'bitboy\'</string>
-	<string name="about_author_twitter_title">Автор в Twitter</string>
-	<string name="about_author_googleplus_title">Автор в Google+</string>
-	<string name="about_market_app_title">Страница на Google Play</string>
-	<string name="about_credits_market_publisher_title">Другие Приложения Автора</string>
+    <string name="about_market_app_title">Страница на Google Play</string>
 
-	<string name="notification_coins_received_msg">Получено %s</string>
+    <string name="notification_coins_received_msg">Получено %s</string>
 	<string name="notification_peers_connected_msg">подключено %d участников</string>
 	<!-- generic buttons -->
-	<string name="button_ok">OK</string>
-	<string name="button_dismiss">Отклонить</string>
+    <string name="button_dismiss">Отклонить</string>
 	<string name="button_cancel">Отмена</string>
 	<string name="button_help">Помощь</string>
 	<string name="button_add">Добавить</string>

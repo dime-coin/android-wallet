@@ -17,7 +17,6 @@
 	<string name="wallet_address_fragment_clipboard_msg">Dirección Dimecoin copiada al portapapeles</string>
 	<string name="wallet_addresses_fragment_add_dialog_title">Añadir dirección Dimecoin</string>
 	<string name="wallet_addresses_fragment_add_dialog_message">Las direcciones Dimecoin no pueden eliminarse. ¿Quieres añadir una nueva dirección a tu cartera?</string>
-	<string name="wallet_balance_fragment_replaying">Saldo no disponible durante la reevaluación.</string>
 	<string name="exchange_rates_activity_title">Tipos de cambio</string>
 
 	<string name="exchange_rates_fragment_empty_text">No se pueden cargar los tipos de cambio</string>
@@ -51,8 +50,6 @@
 	<string name="wallet_version_dialog_msg">Esta versión corrige fallos importantes. Detalles en el historial de cambios de Google Play.</string>
 	<string name="wallet_version_dialog_button_market">Google Play</string>
 	<string name="wallet_version_dialog_button_binary">Descargar</string>
-	<string name="wallet_old_sdk_dialog_title">Versión de Android desactualizada</string>
-	<string name="wallet_old_sdk_dialog_message">Es muy posible que una próxima versión de Dimecoin Wallet ya no valga para su dispositivo. En tal caso, podría ser difícil gastar Dimecoins en este dispositivo.\n\nA menos que domine lo que está haciendo, se le recomienda que transfiera sus Dimecoins pronto.</string>
 	<string name="send_coins_activity_title">Enviar Dimecoins</string>
 	<string name="send_coins_fragment_receiving_address_label">Pagar a</string>
 	<string name="send_coins_fragment_receiving_address_hint">escribir dirección o nombre</string>
@@ -169,9 +166,7 @@
 	<string name="preferences_initiate_reset_dialog_message">¿Deseas reiniciar y reevaluar la cadena de bloques?\n\nEsto ocultará temporalmente  el saldo de tu cartera y las transacciones. Reaparecerán según vaya progresando la sincronización de la cadena.</string>
 	<string name="preferences_initiate_reset_dialog_positive">Restaurar</string>
 	<string name="report_issue_dialog_title_issue">Informar de incidencia</string>
-	<string name="report_issue_dialog_title_crash">Detectado error grave previo</string>
 	<string name="report_issue_dialog_message_issue">Por favor describe la incidencia con detalle para que la pueda reproducir un desarrollador.</string>
-	<string name="report_issue_dialog_message_crash">¿Deseas enviar un informe de error para ayudar a resolver la incidencia en el futuro?</string>
 	<string name="report_issue_dialog_description">Descripción de la incidencia</string>
 	<string name="report_issue_dialog_report">Informe</string>
 	<string name="report_issue_dialog_collect_device_info">Añadir información de dispositivo</string>
@@ -183,20 +178,13 @@
 	<string name="about_license_title">Licencia</string>
 	<string name="about_credits_bitcoinj_title">Esta aplicación utiliza \'Dimecoinj\'</string>
 	<string name="about_credits_zxing_title">Esta aplicación utiliza \'zxing\'</string>
-	<string name="about_credits_icon_title">Esta aplicación utiliza un icono de \'bitboy\'</string>
-	<string name="about_community_googleplus_title">Comunidad Google+</string>
-	<string name="about_community_googleplus_summary">Discusiones sobre la app</string>
-	<string name="about_author_twitter_title">El autor en Twitter</string>
-	<string name="about_author_googleplus_title">El autor en Google+</string>
 	<string name="about_market_app_title">Google Play</string>
 	<string name="about_market_app_summary">Critica o evalua la app</string>
-	<string name="about_credits_market_publisher_title">Otras aplicaciones del autor</string>
-	<string name="notification_coins_received_msg">%s Recibidos</string>
+    <string name="notification_coins_received_msg">%s Recibidos</string>
 
 	<string name="notification_peers_connected_msg">%d pares conectados</string>
 
 	<!-- generic buttons -->
-	<string name="button_ok">Aceptar</string>
 	<string name="button_dismiss">Rechazar</string>
 	<string name="button_cancel">Cancelar</string>
 	<string name="button_help">Ayuda</string>

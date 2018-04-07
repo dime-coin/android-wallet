@@ -16,7 +16,6 @@
 	<string name="wallet_address_fragment_clipboard_msg">Indirizzo Dimecoin copiato negli appunti</string>
 	<string name="wallet_addresses_fragment_add_dialog_title">Aggiungi un indirizzo Dimecoin</string>
 	<string name="wallet_addresses_fragment_add_dialog_message">Gli indirizzi Dimecoin non possono essere cancellati. Ne vuoi aggiungere uno nuovo?</string>
-	<string name="wallet_balance_fragment_replaying">Il conto non è disponibile durante la ripetizione.</string>
 	<string name="exchange_rates_activity_title">Tassi di cambio</string>
 	<string name="exchange_rates_fragment_empty_text">Impossibile acquisire quotazioni di cambio</string>
 	<string name="exchange_rates_fragment_default">(predefinito)</string>
@@ -49,8 +48,6 @@
 	<string name="wallet_version_dialog_msg">Questa versione ha corretto bug importanti. Per dettagli, guarda il change log su Google Play.</string>
 	<string name="wallet_version_dialog_button_market">Google Play</string>
 	<string name="wallet_version_dialog_button_binary">Scarica</string>
-	<string name="wallet_old_sdk_dialog_title">La versione Android non è aggiornata</string>
-	<string name="wallet_old_sdk_dialog_message">Ci sono possibilità che una delle prossime versioni di Dimecoin Wallet non supporterà più il tuo dispositivo. In alcuni casi, può essere difficile spendere denaro su questo dispositivo.\n\nA meno che tu sappia quello che stai facendo, è raccomandato di spostare il tuo denaro al più presto.</string>
 	<string name="send_coins_activity_title">Invia Dimecoins</string>
 	<string name="send_coins_fragment_receiving_address_label">Paga a</string>
 	<string name="send_coins_fragment_receiving_address_hint">inserisci indirizzo o nome</string>
@@ -166,9 +163,7 @@
 	<string name="preferences_initiate_reset_dialog_message">Vorresti riavviare e ripetere la blockchain?\n\nQuesto nasconderà momentaneamente il tuo conto del portafoglio e rimuoverà le transazioni. Entrambi saranno recuperati come progressi blockchain sync.</string>
 	<string name="preferences_initiate_reset_dialog_positive">Reset</string>
 	<string name="report_issue_dialog_title_issue">Segnala un problema</string>
-	<string name="report_issue_dialog_title_crash">Crash precedente rilevato</string>
 	<string name="report_issue_dialog_message_issue">Per favore descrivi il tuo problema in modo preciso così che uno sviluppatore possa riprodurlo.</string>
-	<string name="report_issue_dialog_message_crash">Vorresti inviare una segnalazione di crash, aiutando a correggere questo problema nel futuro?</string>
 	<string name="report_issue_dialog_description">descrizione del problema</string>
 	<string name="report_issue_dialog_report">Segnala</string>
 	<string name="report_issue_dialog_collect_device_info">Allega informazioni sul dispositivo</string>
@@ -180,19 +175,12 @@
 	<string name="about_license_title">Licenza</string>
 	<string name="about_credits_bitcoinj_title">Questa applicazione fa uso di \'Dimecoinj\'</string>
 	<string name="about_credits_zxing_title">Questa applicazione fa uso di \'zxing\'</string>
-	<string name="about_credits_icon_title">Questa applicazione fa uso di una icona di \'bitboy\'</string>
-	<string name="about_community_googleplus_title">Comunità Google+</string>
-	<string name="about_community_googleplus_summary">Discussioni sull\'app</string>
-	<string name="about_author_twitter_title">L\'autore su Twitter</string>
-	<string name="about_author_googleplus_title">L\'autore su Google+</string>
 	<string name="about_market_app_title">Pagina Google Play</string>
 	<string name="about_market_app_summary">Recensire o votare l\'app</string>
-	<string name="about_credits_market_publisher_title">Altre applicazioni dell\'autore</string>
-	<string name="notification_coins_received_msg">Ricevuti %s</string>
+    <string name="notification_coins_received_msg">Ricevuti %s</string>
 	<string name="notification_peers_connected_msg">Connesso a %d peers</string>
 
 	<!-- generic buttons -->
-	<string name="button_ok">OK</string>
 	<string name="button_dismiss">Chiudi</string>
 	<string name="button_cancel">Annulla</string>
 	<string name="button_help">Aiuto</string>

@@ -16,7 +16,6 @@
 	<string name="wallet_address_fragment_clipboard_msg">Dimecoin address copied to clipboard</string>
 	<string name="wallet_addresses_fragment_add_dialog_title">Add Dimecoin address</string>
 	<string name="wallet_addresses_fragment_add_dialog_message">Dimecoin addresses cannot be deleted. Do you want to add a new address to your wallet?</string>
-	<string name="wallet_balance_fragment_replaying">Balance is unavailable during replay.</string>
 	<string name="exchange_rates_activity_title">Exchange Rates</string>
 	<string name="exchange_rates_fragment_empty_text">Could not load exchange rates</string>
 	<string name="exchange_rates_fragment_default">(default)</string>
@@ -50,9 +49,7 @@
 	<string name="wallet_version_dialog_button_binary">Download</string>
 	<string name="wallet_precision_warning_dialog_title">Change of denomination</string>
 	<string name="wallet_precision_warning_dialog_msg">Denomination has been changed from Dimecoin (QRK) to milliDimecoin (mQRK). All amounts are multiplied by a factor of 1000.\n\nYou can revert this change in the settings.</string>
-	<string name="wallet_old_sdk_dialog_title">Android version is out of date</string>
 
-	<string name="wallet_old_sdk_dialog_message">Chances are that one of the next releases of Dimecoin Wallet will not support your device any more. In some cases, it can get difficult to spend coins on this device.\n\nUnless you know what you are doing, it is recommended to move out your coins soon.</string>
 	<string name="send_coins_activity_title">Send Dimecoins</string>
 	<string name="send_coins_fragment_payee_verified_by">verified by: %s</string>
 	<string name="send_coins_fragment_payee_verified_by_unknown">unknown</string>
@@ -186,9 +183,7 @@
 	<string name="preferences_initiate_reset_dialog_message">Would you like to reset and replay the blockchain?\n\nThis will temporarily hide your wallet balance and remove transactions. Both will recover as blockchain sync progresses.</string>
 	<string name="preferences_initiate_reset_dialog_positive">Reset</string>
 	<string name="report_issue_dialog_title_issue">Report issue</string>
-	<string name="report_issue_dialog_title_crash">Previous crash detected</string>
 	<string name="report_issue_dialog_message_issue">Please describe your issue precisely enough so a developer can reproduce.</string>
-	<string name="report_issue_dialog_message_crash">Would you like to send a crash report, helping to fix this issue in the future?</string>
 	<string name="report_issue_dialog_description">issue description</string>
 	<string name="report_issue_dialog_report">Report</string>
 	<string name="report_issue_dialog_collect_device_info">Append device information</string>
@@ -202,27 +197,16 @@
 	<string name="about_credits_bitcoinj_title">This app is using Dimecoinj %s</string>
 	<string name="about_credits_zxing_title">"This app is using 'zxing'"</string>
 
-	<string name="about_credits_icon_title">"This app is using an icon by 'tjb0607'"</string>
-    <string name="about_credits_graphics_title">"Graphics"</string>
-    <string name="about_credits_graphics_summary">"Provided by 'Dimecoinfx'"</string>
-    <string name="about_credits_website_title">"Dimecoin Website"</string>
-    <string name="about_credits_forum_title">"Dimecoin Forum"</string>
+	<string name="about_credits_website_title">"Dimecoin Website"</string>
 
-	<string name="about_community_googleplus_title">Google+ Community</string>
-	<string name="about_community_googleplus_summary">Discussions about the app</string>
-
-	<string name="about_author_twitter_title">Author at Twitter</string>
-	<string name="about_author_googleplus_title">Author at Google+</string>
 	<string name="about_market_app_title">Google Play Page</string>
 	<string name="about_market_app_summary">Review or rate the app</string>
-	<string name="about_credits_market_publisher_title">Other Apps of Author</string>
 
 	<string name="notification_coins_received_msg">Received %s</string>
 
 	<string name="notification_peers_connected_msg">%d peers connected</string>
 
 	<!-- generic buttons -->
-	<string name="button_ok">OK</string>
 	<string name="button_dismiss">Dismiss</string>
 	<string name="button_cancel">Cancel</string>
 	<string name="button_retry">Retry</string>
@@ -243,6 +227,5 @@
 	<string name="action_browse">Browse</string>
 	<string name="time_today">today</string>
 	<string name="address_unlabeled">(unlabeled)</string>
-    <string name="splash_copyright">© 2014 Hash Engineering Solutions</string>
 
 </resources>

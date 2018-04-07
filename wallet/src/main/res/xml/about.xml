@@ -6,7 +6,7 @@
 			android:key="about_version"
 			android:title="Version" />
 		<Preference
-			android:summary="© 2011-2014, Andreas Schildbach\n© 2013-2014, HashEngineering Solutions"
+			android:summary="© 2011-2014, Andreas Schildbach\n© 2013-2014, HashEngineering Solutions\n© 2018-, Dimecoin Network"
 			android:title="Copyright" />
         <Preference
                 android:summary="Version 0.8.3.15 (v0.8.3.15-g09e437b-beta) and above"
@@ -21,35 +21,9 @@
 			android:key="about_market_app"
 			android:summary="@string/about_market_app_summary"
 			android:title="@string/about_market_app_title" />
-		<!--Preference
-			android:key="about_credits_icon"
-			android:title="@string/about_credits_icon_title" /-->
         <Preference
                 android:key="about_credits_website"
                 android:title="@string/about_credits_website_title" />
-        <Preference
-                android:key="about_credits_forum"
-                android:title="@string/about_credits_forum_title" />
-        <Preference
-                android:key="about_credits_graphics"
-                android:summary="@string/about_credits_graphics_summary"
-                android:title="@string/about_credits_graphics_title" />
-
-		<!--Preference
-			android:key="about_community_googleplus"
-			android:summary="@string/about_community_googleplus_summary"
-			android:title="@string/about_community_googleplus_title" />
-		<Preference
-			android:key="about_author_twitter"
-			android:summary="\@bitcoin_wallet"
-			android:title="@string/about_author_twitter_title" /-->
-		<!--Preference
-			android:key="about_author_googleplus"
-			android:summary="+Andreas Schildbach"
-			android:title="@string/about_author_googleplus_title" /-->
-		<Preference
-			android:key="about_market_publisher"
-			android:title="@string/about_credits_market_publisher_title" />
 		<Preference android:key="about_credits_bitcoinj" />
 		<Preference
 			android:key="about_credits_zxing"

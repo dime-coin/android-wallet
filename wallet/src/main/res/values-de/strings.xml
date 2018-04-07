@@ -20,8 +20,7 @@
 	<string name="wallet_addresses_fragment_add_dialog_title">Dimecoin-Adresse hinzufügen</string>
 	<string name="wallet_addresses_fragment_add_dialog_message">Dimecoin-Adressen können nicht gelöscht werden. Möchtest Du eine neue Adresse zu deiner Wallet hinzufügen?</string>
 
-	<string name="wallet_balance_fragment_replaying">Guthaben ist während des Replays nicht verfügbar.</string>
-	<string name="exchange_rates_activity_title">Wechselkurse</string>
+    <string name="exchange_rates_activity_title">Wechselkurse</string>
 	<string name="exchange_rates_fragment_empty_text">Kann Wechselkurse nicht laden</string>
 	<string name="exchange_rates_fragment_default">(Standard)</string>
 	<string name="exchange_rates_fragment_rate">Kurs</string>
@@ -56,10 +55,8 @@
 	<string name="wallet_version_dialog_button_binary">Herunterladen</string>
 	<string name="wallet_precision_warning_dialog_title">Änderung der Stückelung</string>
 	<string name="wallet_precision_warning_dialog_msg">Die Stückelung wurde von Dimecoin (QRK) auf MilliDimecoin (mQRK) geändert. Alle Werte sind mit dem Faktor 1000 multipliziert.\n\nDiese Änderung kannst Du in den Einstellungen rückgängig machen.</string>
-	<string name="wallet_old_sdk_dialog_title">Android ist veraltet</string>
-	<string name="wallet_old_sdk_dialog_message">Es ist möglich, daß eine der nächsten Versionen von Dimecoin Wallet dein Gerät nicht mehr unterstützt. In manchen Fällen kann es schwierig werden, Zahlungen zu tätigen.\n\nEs wird empfohlen, die enthaltenen Dimecoins bald zu verschieben, außer du weisst was du tust.</string>
 
-	<string name="send_coins_activity_title">Dimecoins senden</string>
+    <string name="send_coins_activity_title">Dimecoins senden</string>
 	<string name="send_coins_fragment_payee_verified_by">verifiziert durch: %s</string>
 	<string name="send_coins_fragment_payee_verified_by_unknown">unbekannt</string>
 
@@ -203,10 +200,8 @@
 	<string name="preferences_initiate_reset_dialog_positive">Zurücksetzen</string>
 
 	<string name="report_issue_dialog_title_issue">Problem melden</string>
-	<string name="report_issue_dialog_title_crash">Absturz erkannt</string>
-	<string name="report_issue_dialog_message_issue">Bitte beschreibe dein Problem genau genug, daß ein Entwickler das Problem nachvollziehen kann.</string>
-	<string name="report_issue_dialog_message_crash">Möchtest du einen Fehlerbericht senden, um bei der Fehlerbehebung zu helfen?</string>
-	<string name="report_issue_dialog_description">Problembeschreibung</string>
+    <string name="report_issue_dialog_message_issue">Bitte beschreibe dein Problem genau genug, daß ein Entwickler das Problem nachvollziehen kann.</string>
+    <string name="report_issue_dialog_description">Problembeschreibung</string>
 	<string name="report_issue_dialog_report">Senden</string>
 	<string name="report_issue_dialog_collect_device_info">Geräte-Informationen anhängen</string>
 	<string name="report_issue_dialog_collect_installed_packages">Liste von installierten Paketen anhängen</string>
@@ -219,22 +214,15 @@
 	<string name="about_license_title">Lizenz</string>
 	<string name="about_credits_bitcoinj_title">Diese App nutzt Dimecoinj %s</string>
 	<string name="about_credits_zxing_title">"Diese App nutzt 'zxing'"</string>
-	<string name="about_credits_icon_title">"Diese App nutzt ein Icon von 'bitboy'"</string>
-	<string name="about_community_googleplus_title">Google+ Community</string>
-	<string name="about_community_googleplus_summary">Diskussionen über die App</string>
-	<string name="about_author_twitter_title">Autor bei Twitter</string>
-	<string name="about_author_googleplus_title">Autor bei Google+</string>
-	<string name="about_market_app_title">Eintrag bei Google Play</string>
+    <string name="about_market_app_title">Eintrag bei Google Play</string>
 	<string name="about_market_app_summary">Rezensionen und Bewertungen</string>
-	<string name="about_credits_market_publisher_title">Andere Apps des Autors</string>
 
-	<string name="notification_coins_received_msg">%s empfangen</string>
+    <string name="notification_coins_received_msg">%s empfangen</string>
 
 	<string name="notification_peers_connected_msg">%d Peers verbunden</string>
 
 	<!-- generic buttons -->
-	<string name="button_ok">Ok</string>
-	<string name="button_dismiss">Schließen</string>
+    <string name="button_dismiss">Schließen</string>
 	<string name="button_cancel">Abbrechen</string>
 	<string name="button_retry">Wiederholen</string>
 	<string name="button_help">Hilfe</string>
