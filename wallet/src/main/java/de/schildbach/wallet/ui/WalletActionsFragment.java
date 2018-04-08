@@ -26,6 +26,9 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.widget.FrameLayout;
+
+import com.github.clans.fab.FloatingActionMenu;
+
 import co.com.dimecoin.wallet.R;
 
 /**
@@ -47,6 +50,7 @@ public final class WalletActionsFragment extends Fragment
 	public View onCreateView(final LayoutInflater inflater, final ViewGroup container, final Bundle savedInstanceState)
 	{
 		final View view = inflater.inflate(R.layout.wallet_actions_fragment, container);
+		final FloatingActionMenu menu = view.findViewById(R.id.wallet_actions);
 
 		final View requestButton = view.findViewById(R.id.wallet_actions_request);
 		requestButton.setOnClickListener(new OnClickListener()
@@ -55,6 +59,7 @@ public final class WalletActionsFragment extends Fragment
 			public void onClick(final View v)
 			{
 				activity.handleRequestCoins();
+				menu.close(true);
 			}
 		});
 
@@ -65,6 +70,7 @@ public final class WalletActionsFragment extends Fragment
 			public void onClick(final View v)
 			{
 				activity.handleSendCoins();
+				menu.close(true);
 			}
 		});
 
@@ -75,27 +81,10 @@ public final class WalletActionsFragment extends Fragment
 			public void onClick(final View v)
 			{
 				activity.handleScan();
+				menu.close(true);
 			}
 		});
 
 		return view;
-	}
-
-	@Override
-	public void onResume()
-	{
-		super.onResume();
-
-		updateView();
-	}
-
-	private void updateView()
-	{
-		final boolean showActions = !getResources().getBoolean(R.bool.wallet_actions_top);
-
-		final View view = getView();
-		final ViewParent parent = view.getParent();
-		final View fragment = parent instanceof FrameLayout ? (FrameLayout) parent : view;
-		fragment.setVisibility(showActions ? View.VISIBLE : View.GONE);
 	}
 }

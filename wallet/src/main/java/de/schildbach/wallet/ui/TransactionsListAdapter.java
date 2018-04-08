@@ -31,6 +31,7 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.support.v4.content.ContextCompat;
 import android.text.Html;
 import android.text.format.DateUtils;
 import android.view.LayoutInflater;
@@ -73,7 +74,6 @@ public class TransactionsListAdapter extends BaseAdapter
 	private final int colorSignificant;
 	private final int colorInsignificant;
 	private final int colorError;
-	private final int colorCircularBuilding = Color.parseColor("#44ff44");
 	private final String textCoinBase;
 	private final String textInternal;
 
@@ -259,7 +259,7 @@ public class TransactionsListAdapter extends BaseAdapter
 						: Constants.MAX_NUM_CONFIRMATIONS);
 				rowConfidenceCircular.setSize(1);
 				rowConfidenceCircular.setMaxSize(1);
-				rowConfidenceCircular.setColors(colorCircularBuilding, Color.DKGRAY);
+				rowConfidenceCircular.setColors(ContextCompat.getColor(context, R.color.dimecoin_blue), Color.DKGRAY);
 			}
 			else if (confidenceType == ConfidenceType.DEAD)
 			{

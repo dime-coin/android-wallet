@@ -2,6 +2,7 @@
 <resources>
 
 	<color name="dimecoin_blue">#024da2</color>
+	<color name="dimecoin_light_blue">#9CCBFE</color>
 
 	<!-- foreground -->
 	<color name="fg_significant">#ff000000</color>
@@ -13,6 +14,7 @@
 	<!-- background -->
 	<color name="bg_bright">#ffffffff</color>
 	<color name="bg_less_bright">#ffE6E6E6</color>
+	<color name="bg_dark">#ff343434</color>
 	<color name="bg_panel">#ffF2F2F2</color>
 	<color name="bg_form">#ffF2F2F2</color>
 	<color name="bg_list">#ffffffff</color>

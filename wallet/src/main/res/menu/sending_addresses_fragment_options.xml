@@ -10,7 +10,7 @@
 		app:showAsAction="always|withText" />
 	<item
 		android:id="@+id/sending_addresses_options_scan"
-		android:icon="@drawable/ic_action_camera"
+		android:icon="@drawable/ic_action_qr"
 		android:title="@string/address_book_options_scan_title"
 		app:showAsAction="always|withText" />
 

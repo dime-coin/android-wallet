@@ -9,7 +9,6 @@
 		app:showAsAction="always|withText" />
 	<item
 		android:id="@+id/request_coins_options_share"
-		android:icon="@drawable/ic_action_share"
 		android:title="@string/button_share"
 		app:showAsAction="always|withText" />
 	<item

@@ -243,18 +243,6 @@ public final class WalletActivity extends AbstractOnDemandServiceActivity
 	{
 		switch (item.getItemId())
 		{
-			case R.id.wallet_options_request:
-				handleRequestCoins();
-				return true;
-
-			case R.id.wallet_options_send:
-				handleSendCoins();
-				return true;
-
-			case R.id.wallet_options_scan:
-				handleScan();
-				return true;
-
 			case R.id.wallet_options_address_book:
 				AddressBookActivity.start(this, true);
 				return true;

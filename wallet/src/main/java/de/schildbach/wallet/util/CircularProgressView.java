@@ -40,7 +40,6 @@ public class CircularProgressView extends View
 	private int maxSize = 1;
 	private final Path path = new Path();
 	private final Paint fillPaint = new Paint();
-	private final Paint strokePaint = new Paint();
 
 	public CircularProgressView(final Context context, final AttributeSet attrs)
 	{
@@ -51,11 +50,6 @@ public class CircularProgressView extends View
 		fillPaint.setStyle(Style.FILL);
 		fillPaint.setColor(Color.parseColor("#44ff44"));
 		fillPaint.setAntiAlias(true);
-
-		strokePaint.setStyle(Style.STROKE);
-		strokePaint.setColor(Color.DKGRAY);
-		strokePaint.setStrokeWidth(1 * density);
-		strokePaint.setAntiAlias(true);
 	}
 
 	@Override
@@ -64,13 +58,11 @@ public class CircularProgressView extends View
 		super.onDraw(canvas);
 
 		canvas.drawPath(path, fillPaint);
-		canvas.drawPath(path, strokePaint);
 	}
 
 	public void setColors(final int fillColor, final int strokeColor)
 	{
 		fillPaint.setColor(fillColor);
-		strokePaint.setColor(strokeColor);
 		postInvalidate();
 	}
 

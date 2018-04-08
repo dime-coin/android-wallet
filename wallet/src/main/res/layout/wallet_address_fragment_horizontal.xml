@@ -18,7 +18,8 @@
 			android:layout_weight="1"
 			android:paddingLeft="8dp"
 			android:text="@string/wallet_address_fragment_your"
-			android:textSize="@dimen/font_size_small" />
+			android:textSize="@dimen/font_size_normal"
+			android:textStyle="bold" />
 
 		<FrameLayout
 			android:id="@+id/bitcoin_address_button"

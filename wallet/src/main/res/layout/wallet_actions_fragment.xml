@@ -1,48 +1,45 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="wrap_content"
-	android:divider="@drawable/divider_dark"
-	android:dividerPadding="8dp"
-	android:measureWithLargestChild="true"
-	android:orientation="horizontal"
-    android:background="@color/dimecoin_blue">
+	xmlns:fab="http://schemas.android.com/apk/res-auto">
 
-	<Button
-		android:id="@+id/wallet_actions_request"
-		style="@style/My.Widget.Button.Borderless"
-		android:layout_width="wrap_content"
+	<com.github.clans.fab.FloatingActionMenu
+		android:id="@+id/wallet_actions"
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:drawableLeft="@drawable/ic_action_receive"
-		android:singleLine="true"
-		android:text="@string/button_request_coins"
-		android:textAllCaps="true"
-		android:textColor="@android:color/white"
-		android:textSize="@dimen/font_size_tiny"
-		android:textStyle="bold" />
+		android:layout_gravity="bottom|end"
+		android:layout_margin="8dp"
+		fab:menu_icon="@drawable/fab_add"
+		fab:menu_colorNormal="@color/dimecoin_blue"
+		fab:menu_colorPressed="@color/dimecoin_light_blue"
+		fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+		fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right">
 
-	<View
-		android:layout_width="0px"
-		android:layout_height="0px"
-		android:layout_weight="1" />
+		<com.github.clans.fab.FloatingActionButton
+			android:id="@+id/wallet_actions_send"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/ic_action_send"
+			fab:fab_label="@string/button_send_coins"
+			fab:fab_colorNormal="#4CAF50"
+			fab:fab_colorPressed="@color/dimecoin_light_blue" />
 
-	<Button
-		android:id="@+id/wallet_actions_send"
-		style="@style/My.Widget.Button.Borderless"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:drawableRight="@drawable/ic_action_send"
-		android:singleLine="true"
-		android:text="@string/button_send_coins"
-		android:textAllCaps="true"
-		android:textColor="@android:color/white"
-		android:textSize="@dimen/font_size_tiny"
-		android:textStyle="bold" />
+		<com.github.clans.fab.FloatingActionButton
+			android:id="@+id/wallet_actions_request"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/ic_action_receive"
+			fab:fab_label="@string/button_request_coins"
+			fab:fab_colorNormal="#009688"
+			fab:fab_colorPressed="@color/dimecoin_light_blue" />
 
-	<ImageButton
-		android:id="@+id/wallet_actions_send_qr"
-		style="@style/My.Widget.Button.Borderless"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:src="@drawable/ic_action_camera" />
-
+		<com.github.clans.fab.FloatingActionButton
+			android:id="@+id/wallet_actions_send_qr"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/ic_action_qr"
+			fab:fab_label="@string/button_scan"
+			fab:fab_colorNormal="#607D8B"
+			fab:fab_colorPressed="@color/dimecoin_light_blue" />
+	</com.github.clans.fab.FloatingActionMenu>
 </LinearLayout>

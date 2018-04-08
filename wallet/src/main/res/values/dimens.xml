@@ -3,8 +3,7 @@
 
 	<dimen name="font_size_tiny">12sp</dimen>
 	<dimen name="font_size_small">15sp</dimen>
-    <dimen name="font_size_small_littlebigger">18sp</dimen>
-	<dimen name="font_size_normal">18sp</dimen>
+    <dimen name="font_size_normal">18sp</dimen>
 	<dimen name="font_size_large">24sp</dimen>
     <dimen name="font_size_huge">42sp</dimen>
 	<dimen name="symbol_size_normal">14sp</dimen>

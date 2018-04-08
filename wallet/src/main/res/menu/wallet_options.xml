@@ -1,30 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
-	xmlns:android="http://schemas.android.com/apk/res/android" >
-
-	<item
-		android:id="@+id/wallet_options_request"
-		android:icon="@drawable/ic_action_receive"
-		android:title="@string/request_coins_activity_title"
-		android:titleCondensed="@string/button_request_coins"
-		android:visible="@bool/wallet_actions_top"
-		app:showAsAction="always|withText" />
-	<item
-		android:id="@+id/wallet_options_send"
-		android:icon="@drawable/ic_action_send"
-		app:showAsAction="always|withText"
-		android:title="@string/send_coins_activity_title"
-		android:titleCondensed="@string/button_send_coins"
-		android:visible="@bool/wallet_actions_top"/>
-	<item
-		android:id="@+id/wallet_options_scan"
-		android:icon="@drawable/ic_action_camera"
-		app:showAsAction="always|withText"
-		android:title="@string/button_scan"
-		android:visible="@bool/wallet_actions_top"/>
+	xmlns:android="http://schemas.android.com/apk/res/android">
 	<item
 		android:id="@+id/wallet_options_address_book"
-		android:icon="@drawable/ic_action_labels"
+		android:icon="@drawable/ic_action_address_book"
 		app:showAsAction="ifRoom|withText"
 		android:title="@string/address_book_activity_title"/>
 	<item
@@ -69,5 +48,4 @@
 		android:id="@+id/wallet_options_help"
 		app:showAsAction="never"
 		android:title="@string/button_help"/>
-
 </menu>
