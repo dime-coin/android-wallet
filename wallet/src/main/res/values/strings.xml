@@ -48,7 +48,7 @@
 	<string name="wallet_version_dialog_button_market">Google Play</string>
 	<string name="wallet_version_dialog_button_binary">Download</string>
 	<string name="wallet_precision_warning_dialog_title">Change of denomination</string>
-	<string name="wallet_precision_warning_dialog_msg">Denomination has been changed from Dimecoin (QRK) to milliDimecoin (mQRK). All amounts are multiplied by a factor of 1000.\n\nYou can revert this change in the settings.</string>
+	<string name="wallet_precision_warning_dialog_msg">Denomination has been changed from Dimecoin (DIME) to milliDimecoin (mDIME). All amounts are multiplied by a factor of 1000.\n\nYou can revert this change in the settings.</string>
 
 	<string name="send_coins_activity_title">Send Dimecoins</string>
 	<string name="send_coins_fragment_payee_verified_by">verified by: %s</string>
@@ -61,7 +61,7 @@
 	<string name="send_coins_fragment_receiving_address_error_cross_network_unknown">Cannot use address of unknown network with this wallet!</string>
 
 	<string name="send_coins_fragment_receiving_address_complex">complex\naddress</string>
-	<string name="send_coins_fragment_pending">(QRK %s waiting for confirmation)</string>
+	<string name="send_coins_fragment_pending">(DIME %s waiting for confirmation)</string>
 
 	<string name="send_coins_fragment_amount_label">Amount to pay</string>
 	<string name="send_coins_fragment_direct_payment_enable">Send payment directly to the payee.</string>

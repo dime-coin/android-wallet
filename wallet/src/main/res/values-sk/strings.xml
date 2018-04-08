@@ -52,7 +52,7 @@
 	<string name="send_coins_fragment_receiving_address_error">Nesprávna Dimecoin adresa!</string>
 	<string name="send_coins_fragment_receiving_address_error_cross_network">Adresu %s nie je možné použiť s touto peňaženkou!</string>
 	<string name="send_coins_fragment_receiving_address_error_cross_network_unknown">Adresu z neznámej siete nie je možné použiť s touto peňaženkou!</string>
-	<string name="send_coins_fragment_pending">(%s QRK čaká na potvrdenie)</string>
+	<string name="send_coins_fragment_pending">(%s DIME čaká na potvrdenie)</string>
 	<string name="send_coins_fragment_amount_label">Suma</string>
 	<string name="send_coins_fragment_button_send">Odoslať</string>
 	<string name="send_coins_fragment_button_back">Späť</string>

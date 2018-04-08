@@ -54,7 +54,7 @@
 	<string name="wallet_version_dialog_button_market">Google Play</string>
 	<string name="wallet_version_dialog_button_binary">Herunterladen</string>
 	<string name="wallet_precision_warning_dialog_title">Änderung der Stückelung</string>
-	<string name="wallet_precision_warning_dialog_msg">Die Stückelung wurde von Dimecoin (QRK) auf MilliDimecoin (mQRK) geändert. Alle Werte sind mit dem Faktor 1000 multipliziert.\n\nDiese Änderung kannst Du in den Einstellungen rückgängig machen.</string>
+	<string name="wallet_precision_warning_dialog_msg">Die Stückelung wurde von Dimecoin (DIME) auf MilliDimecoin (mDIME) geändert. Alle Werte sind mit dem Faktor 1000 multipliziert.\n\nDiese Änderung kannst Du in den Einstellungen rückgängig machen.</string>
 
     <string name="send_coins_activity_title">Dimecoins senden</string>
 	<string name="send_coins_fragment_payee_verified_by">verifiziert durch: %s</string>
@@ -68,7 +68,7 @@
 	<string name="send_coins_fragment_receiving_address_error_cross_network_unknown">Kann Adresse von unbekanntem Netzwerk mit dieser Wallet nicht nutzen!</string>
 
 	<string name="send_coins_fragment_receiving_address_complex">komplexe\nAdresse</string>
-	<string name="send_coins_fragment_pending">(QRK %s warten auf Bestätigung)</string>
+	<string name="send_coins_fragment_pending">(DIME %s warten auf Bestätigung)</string>
 
 	<string name="send_coins_fragment_amount_label">Betrag</string>
 	<string name="send_coins_fragment_direct_payment_enable">Zahlung auch direkt senden</string>
@@ -233,8 +233,8 @@
 	<string name="button_paste">Einfügen</string>
 	<string name="button_share">Teilen</string>
 	<string name="button_set_as_default">Als Standard setzen</string>
-	<string name="button_request_coins">QRK anfordern</string>
-	<string name="button_send_coins">QRK senden</string>
+	<string name="button_request_coins">DIME anfordern</string>
+	<string name="button_send_coins">DIME senden</string>
 	<string name="button_scan">Scannen</string>
 	<string name="button_edit_address">Adresse hinzufügen/ändern</string>
 	<string name="button_settings">Einstellungen</string>

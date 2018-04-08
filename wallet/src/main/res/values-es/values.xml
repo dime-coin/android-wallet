@@ -2,10 +2,10 @@
 <resources>
 
 	<string-array name="preferences_precision_labels">
-		<item>QRK, 8 dígitos</item>
-		<item>QRK, 6 dígitos</item>
-		<item>QRK, 4 dígitos</item>
-		<item>mQRK, 2 dígitos</item>
+		<item>DIME, 8 dígitos</item>
+		<item>DIME, 6 dígitos</item>
+		<item>DIME, 4 dígitos</item>
+		<item>mDIME, 2 dígitos</item>
 	</string-array>
 
 </resources>

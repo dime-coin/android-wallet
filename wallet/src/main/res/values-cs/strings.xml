@@ -27,7 +27,7 @@
 	<string name="send_coins_fragment_receiving_address_hint">napište adresu či jméno</string>
 
 	<string name="send_coins_fragment_receiving_address_error">Nesprávná Dimecoin Adresa!</string>
-	<string name="send_coins_fragment_pending">(QRK %s čeká na potvrzení)</string>
+	<string name="send_coins_fragment_pending">(DIME %s čeká na potvrzení)</string>
 
 	<string name="send_coins_fragment_amount_label">Částka k zaplacení</string>
 	<string name="send_coins_fragment_button_send">Poslat</string>

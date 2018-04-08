@@ -151,7 +151,7 @@ public class WalletUtils
 		return localValue.multiply(GenericUtils.ONE_BTC).divide(rate);
 	}
 
-    public static BigInteger btcValue_BTCtoQRK(@Nonnull final BigInteger localValue_8, @Nonnull final BigInteger rate)
+    public static BigInteger btcValue_BTCtoDIME(@Nonnull final BigInteger localValue_8, @Nonnull final BigInteger rate)
     {
         return localValue_8.multiply(GenericUtils.ONE_BTC).divide(rate);
     }

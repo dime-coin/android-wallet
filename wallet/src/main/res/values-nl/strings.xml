@@ -26,7 +26,7 @@
 	<string name="send_coins_fragment_receiving_address_hint">typ adres of naam</string>
 
 	<string name="send_coins_fragment_receiving_address_error">Ongeldig Dimecoin Adres!</string>
-	<string name="send_coins_fragment_pending">(QRK %s wachtend op bevestiging)</string>
+	<string name="send_coins_fragment_pending">(DIME %s wachtend op bevestiging)</string>
 
 	<string name="send_coins_fragment_amount_label">Bedrag te betalen</string>
 	<string name="send_coins_fragment_button_send">Verzenden</string>

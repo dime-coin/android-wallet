@@ -2,10 +2,10 @@
 <resources>
 
 	<string-array name="preferences_precision_labels">
-		<item>QRK, 8 Dezimalen</item>
-		<item>QRK, 6 Dezimalen</item>
-		<item>QRK, 4 Dezimalen</item>
-		<item>mQRK, 2 Dezimalen</item>
+		<item>DIME, 8 Dezimalen</item>
+		<item>DIME, 6 Dezimalen</item>
+		<item>DIME, 4 Dezimalen</item>
+		<item>mDIME, 2 Dezimalen</item>
 	</string-array>
 
 </resources>
