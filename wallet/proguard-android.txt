@@ -1,0 +1,3 @@
+-dontwarn javax.mail.**
+-dontwarn javax.naming.**
+-dontwarn sun.misc.**

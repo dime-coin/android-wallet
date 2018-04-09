@@ -19,9 +19,12 @@ android {
     }
 
     buildTypes {
-        release {
+        all {
             minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-android.txt'
+        }
+        debug {
+            debuggable true
         }
     }
 
@@ -34,10 +37,27 @@ android {
         }
     }
 
+    /**
+     * This is our hash9 (quark) algorithm.
+     */
     externalNativeBuild {
         ndkBuild {
             path 'src/main/cpp/Android.mk'
         }
+    }
+
+    /**
+     * This comes from lambdaworks scrypt library, we don't actually need it.
+     */
+    packagingOptions {
+        exclude 'lib/x86_64/darwin/libscrypt.dylib'
+        exclude 'lib/x86_64/freebsd/libscrypt.so'
+        exclude 'lib/x86_64/linux/libscrypt.so'
+    }
+
+    lintOptions {
+        abortOnError false
+        disable 'MissingTranslation'
     }
 }
 
