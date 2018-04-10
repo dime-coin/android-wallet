@@ -62,6 +62,7 @@ import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.content.FileProvider;
 import android.support.v7.app.ActionBar;
 import android.text.format.DateUtils;
 import android.view.View;
@@ -827,7 +828,9 @@ public final class WalletActivity extends AbstractOnDemandServiceActivity implem
 				getString(R.string.export_keys_dialog_mail_text) + "\n\n" + String.format(Constants.WEBMARKET_APP_URL, getPackageName()) + "\n\n"
 						+ Constants.SOURCE_URL + '\n');
 		intent.setType("x-"+ CoinDefinition.coinName.toLowerCase()+"/private-keys");
-		intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(file));
+		intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+		Uri fileUri = FileProvider.getUriForFile(this, getPackageName() + ".fileprovider", file);
+		intent.putExtra(Intent.EXTRA_STREAM, fileUri);
 
 		try
 		{
