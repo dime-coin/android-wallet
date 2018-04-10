@@ -108,6 +108,8 @@ public final class WalletActivity extends AbstractOnDemandServiceActivity implem
 
 	private static final int REQUEST_CODE_SCAN = 0;
 	private static final int REQUEST_CAMERA_PERMISSION = 1;
+	private static final int REQUEST_READ_PERMISSION = 2;
+	private static final int REQUEST_WRITE_PERMISSION = 3;
 
 	private static final int DEFAULT_PRECISION_CHANGE_VERSION_CODE = 152;
 
@@ -184,6 +186,16 @@ public final class WalletActivity extends AbstractOnDemandServiceActivity implem
 		if (requestCode == REQUEST_CAMERA_PERMISSION) {
 			if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
 				startActivityForResult(new Intent(this, ScanActivity.class), REQUEST_CODE_SCAN);
+			}
+		}
+		if (requestCode == REQUEST_READ_PERMISSION) {
+			if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+				showDialog(DIALOG_IMPORT_KEYS);
+			}
+		}
+		if (requestCode == REQUEST_WRITE_PERMISSION) {
+			if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+				handleExportKeys();
 			}
 		}
 	}
@@ -263,11 +275,19 @@ public final class WalletActivity extends AbstractOnDemandServiceActivity implem
 				return true;
 
 			case R.id.wallet_options_import_keys:
-				showDialog(DIALOG_IMPORT_KEYS);
+				if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+					ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, REQUEST_READ_PERMISSION);
+				} else {
+					showDialog(DIALOG_IMPORT_KEYS);
+				}
 				return true;
 
 			case R.id.wallet_options_export_keys:
-				handleExportKeys();
+				if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+					ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_WRITE_PERMISSION);
+				} else {
+					handleExportKeys();
+				}
 				return true;
 
 			case R.id.wallet_options_preferences:
