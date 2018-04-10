@@ -17,11 +17,16 @@
 
 package de.schildbach.wallet.ui;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 
 import com.google.bitcoin.core.Transaction;
 
@@ -31,16 +36,28 @@ import de.schildbach.wallet.ui.InputParser.StringInputParser;
 /**
  * @author Andreas Schildbach
  */
-public final class SendCoinsQrActivity extends AbstractOnDemandServiceActivity
+public final class SendCoinsQrActivity extends AbstractOnDemandServiceActivity implements ActivityCompat.OnRequestPermissionsResultCallback
 {
 	private static final int REQUEST_CODE_SCAN = 0;
+	private static final int REQUEST_CAMERA_PERMISSION = 1;
 
 	@Override
 	protected void onCreate(final Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
+		if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+			ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, REQUEST_CAMERA_PERMISSION);
+		} else {
+			startActivityForResult(new Intent(this, ScanActivity.class), REQUEST_CODE_SCAN);
+		}
+	}
 
-		startActivityForResult(new Intent(this, ScanActivity.class), REQUEST_CODE_SCAN);
+	public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+		if (requestCode == REQUEST_CAMERA_PERMISSION) {
+			if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+				startActivityForResult(new Intent(this, ScanActivity.class), REQUEST_CODE_SCAN);
+			}
+		}
 	}
 
 	@Override

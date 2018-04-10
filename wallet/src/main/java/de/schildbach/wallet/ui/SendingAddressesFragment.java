@@ -21,6 +21,7 @@ import java.util.ArrayList;
 
 import javax.annotation.Nonnull;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -29,7 +30,10 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.LoaderManager;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
 import android.support.v4.widget.SimpleCursorAdapter;
@@ -61,7 +65,7 @@ import co.com.dimecoin.wallet.R;
 /**
  * @author Andreas Schildbach
  */
-public final class SendingAddressesFragment extends ListFragment implements LoaderManager.LoaderCallbacks<Cursor>
+public final class SendingAddressesFragment extends ListFragment implements LoaderManager.LoaderCallbacks<Cursor>, ActivityCompat.OnRequestPermissionsResultCallback
 {
 	private AbstractWalletActivity activity;
 	private ClipboardManager clipboardManager;
@@ -73,6 +77,7 @@ public final class SendingAddressesFragment extends ListFragment implements Load
 	private final Handler handler = new Handler();
 
 	private static final int REQUEST_CODE_SCAN = 0;
+	private static final int REQUEST_CAMERA_PERMISSION = 1;
 
 	@Override
 	public void onAttach(final Activity activity)
@@ -118,6 +123,14 @@ public final class SendingAddressesFragment extends ListFragment implements Load
 		setListAdapter(adapter);
 
 		loaderManager.initLoader(0, null, this);
+	}
+
+	public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+		if (requestCode == REQUEST_CAMERA_PERMISSION) {
+			if (ContextCompat.checkSelfPermission(activity, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+				startActivityForResult(new Intent(activity, ScanActivity.class), REQUEST_CODE_SCAN);
+			}
+		}
 	}
 
 	@Override
@@ -233,7 +246,11 @@ public final class SendingAddressesFragment extends ListFragment implements Load
 
 	private void handleScan()
 	{
-		startActivityForResult(new Intent(activity, ScanActivity.class), REQUEST_CODE_SCAN);
+		if (ContextCompat.checkSelfPermission(activity, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+			ActivityCompat.requestPermissions(activity, new String[]{Manifest.permission.CAMERA}, REQUEST_CAMERA_PERMISSION);
+		} else {
+			startActivityForResult(new Intent(activity, ScanActivity.class), REQUEST_CODE_SCAN);
+		}
 	}
 
 	@Override

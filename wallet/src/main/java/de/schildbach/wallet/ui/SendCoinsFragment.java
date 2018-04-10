@@ -28,6 +28,7 @@ import com.google.bitcoin.core.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import android.Manifest;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.content.ContentResolver;
@@ -45,8 +46,11 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Process;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.app.LoaderManager.LoaderCallbacks;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.content.Loader;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -94,7 +98,7 @@ import co.com.dimecoin.wallet.R;
 /**
  * @author Andreas Schildbach
  */
-public final class SendCoinsFragment extends Fragment
+public final class SendCoinsFragment extends Fragment implements ActivityCompat.OnRequestPermissionsResultCallback
 {
 	private AbstractBindServiceActivity activity;
 	private WalletApplication application;
@@ -144,6 +148,7 @@ public final class SendCoinsFragment extends Fragment
 
 	private static final int REQUEST_CODE_SCAN = 0;
 	private static final int REQUEST_CODE_ENABLE_BLUETOOTH = 1;
+	private static final int REQUEST_CAMERA_PERMISSION = 2;
 
 	private static final Logger log = LoggerFactory.getLogger(SendCoinsFragment.class);
 
@@ -623,6 +628,14 @@ public final class SendCoinsFragment extends Fragment
 			directPaymentAck = savedInstanceState.getBoolean("direct_payment_ack");
 	}
 
+	public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+		if (requestCode == REQUEST_CAMERA_PERMISSION) {
+			if (ContextCompat.checkSelfPermission(activity, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+				startActivityForResult(new Intent(activity, ScanActivity.class), REQUEST_CODE_SCAN);
+			}
+		}
+	}
+
 	@Override
 	public void onActivityResult(final int requestCode, final int resultCode, final Intent intent)
 	{
@@ -937,7 +950,11 @@ public final class SendCoinsFragment extends Fragment
 
 	private void handleScan()
 	{
-		startActivityForResult(new Intent(activity, ScanActivity.class), REQUEST_CODE_SCAN);
+		if (ContextCompat.checkSelfPermission(activity, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+			ActivityCompat.requestPermissions(activity, new String[]{Manifest.permission.CAMERA}, REQUEST_CAMERA_PERMISSION);
+		} else {
+			startActivityForResult(new Intent(activity, ScanActivity.class), REQUEST_CODE_SCAN);
+		}
 	}
 
 	private void handleEmpty()

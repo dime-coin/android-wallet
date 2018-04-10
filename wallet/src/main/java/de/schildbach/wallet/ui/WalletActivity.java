@@ -28,9 +28,6 @@ import java.io.Reader;
 import java.io.StringReader;
 import java.io.StringWriter;
 import java.io.Writer;
-import java.net.SocketException;
-import java.net.SocketTimeoutException;
-import java.net.UnknownHostException;
 import java.text.DateFormat;
 import java.util.Collections;
 import java.util.Comparator;
@@ -46,6 +43,7 @@ import javax.annotation.Nonnull;
 //import org.slf4j.Logger;
 //import org.slf4j.LoggerFactory;
 
+import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -54,7 +52,6 @@ import android.content.DialogInterface.OnCancelListener;
 import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.net.Uri;
@@ -62,6 +59,9 @@ import android.nfc.NdefMessage;
 import android.nfc.NfcAdapter;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
 import android.text.format.DateUtils;
 import android.view.View;
@@ -84,9 +84,7 @@ import de.schildbach.wallet.PaymentIntent;
 import de.schildbach.wallet.WalletApplication;
 import de.schildbach.wallet.ui.InputParser.BinaryInputParser;
 import de.schildbach.wallet.ui.InputParser.StringInputParser;
-import de.schildbach.wallet.util.CrashReporter;
 import de.schildbach.wallet.util.Crypto;
-import de.schildbach.wallet.util.HttpGetThread;
 import de.schildbach.wallet.util.Iso8601Format;
 import de.schildbach.wallet.util.Nfc;
 import de.schildbach.wallet.util.WalletUtils;
@@ -98,7 +96,7 @@ import co.com.dimecoin.wallet.R;
 /**
  * @author Andreas Schildbach
  */
-public final class WalletActivity extends AbstractOnDemandServiceActivity
+public final class WalletActivity extends AbstractOnDemandServiceActivity implements ActivityCompat.OnRequestPermissionsResultCallback
 {
 	private static final int DIALOG_IMPORT_KEYS = 0;
 	private static final int DIALOG_EXPORT_KEYS = 1;
@@ -109,6 +107,7 @@ public final class WalletActivity extends AbstractOnDemandServiceActivity
 	private Wallet wallet;
 
 	private static final int REQUEST_CODE_SCAN = 0;
+	private static final int REQUEST_CAMERA_PERMISSION = 1;
 
 	private static final int DEFAULT_PRECISION_CHANGE_VERSION_CODE = 152;
 
@@ -178,6 +177,14 @@ public final class WalletActivity extends AbstractOnDemandServiceActivity
 					dialog(WalletActivity.this, null, 0, messageResId, messageArgs);
 				}
 			}.parse();
+		}
+	}
+
+	public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+		if (requestCode == REQUEST_CAMERA_PERMISSION) {
+			if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+				startActivityForResult(new Intent(this, ScanActivity.class), REQUEST_CODE_SCAN);
+			}
 		}
 	}
 
@@ -299,7 +306,11 @@ public final class WalletActivity extends AbstractOnDemandServiceActivity
 
 	public void handleScan()
 	{
-		startActivityForResult(new Intent(this, ScanActivity.class), REQUEST_CODE_SCAN);
+		if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+			ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, REQUEST_CAMERA_PERMISSION);
+		} else {
+			startActivityForResult(new Intent(this, ScanActivity.class), REQUEST_CODE_SCAN);
+		}
 	}
 
 	public void handleExportKeys()
