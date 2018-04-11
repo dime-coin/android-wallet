@@ -198,8 +198,8 @@
 	<string name="button_share">Compartilhar</string>
 	<string name="button_set_as_default">Definir como padrão</string>
 
-	<string name="button_request_coins">Solicitar Dimecoins</string>
-	<string name="button_send_coins">Enviar Dimecoins</string>
+	<string name="button_request_coins">Solicitar</string>
+	<string name="button_send_coins">Enviar</string>
 
 	<string name="button_scan">Escanear</string>
 	<string name="button_edit_address">Adicionar/editar endereço</string>

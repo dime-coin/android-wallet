@@ -185,8 +185,8 @@
 	<string name="button_paste">Indsæt</string>
 	<string name="button_share">Del</string>
 	<string name="button_set_as_default">Sæt som standard</string>
-	<string name="button_request_coins">Forespørg mønter</string>
-	<string name="button_send_coins">Send mønter</string>
+	<string name="button_request_coins">Forespørg</string>
+	<string name="button_send_coins">Send</string>
 	<string name="button_scan">Scan</string>
 	<string name="button_edit_address">Tilføj/redigér adresse</string>
 	<string name="button_settings">Indstillinger</string>

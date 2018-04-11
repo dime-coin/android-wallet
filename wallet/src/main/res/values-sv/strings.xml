@@ -98,8 +98,8 @@
 	<string name="button_paste">Klistra in</string>
 	<string name="button_share">Dela</string>
 	<string name="button_set_as_default">Ange som standard</string>
-	<string name="button_request_coins">Ta emot Dimecoins</string>
-	<string name="button_send_coins">Skicka Dimecoins</string>
+	<string name="button_request_coins">Begär</string>
+	<string name="button_send_coins">Skicka</string>
 	<string name="button_edit_address">Lägg till/ändra etikett</string>
 	<string name="button_scan">Skanna</string>
 	<string name="button_settings">Inställningar</string>

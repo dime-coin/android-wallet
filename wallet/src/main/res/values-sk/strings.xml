@@ -184,8 +184,8 @@
 	<string name="button_paste">Vložiť</string>
 	<string name="button_share">Zdieľať</string>
 	<string name="button_set_as_default">Nastaviť ako predvolené</string>
-	<string name="button_request_coins">Vyžiadať Dimecoiny</string>
-	<string name="button_send_coins">Odoslať Dimecoiny</string>
+	<string name="button_request_coins">Vyžiadať</string>
+	<string name="button_send_coins">Odoslať</string>
 	<string name="button_scan">Skenovať</string>
 	<string name="button_edit_address">Pridať/zmeniť adresu</string>
 	<string name="button_settings">Nastavenia</string>

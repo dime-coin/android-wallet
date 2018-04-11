@@ -189,8 +189,8 @@
 	<string name="button_paste">Вставить</string>
 	<string name="button_share">Поделиться</string>
 	<string name="button_set_as_default">Установить по умолчанию</string>
-	<string name="button_request_coins">Запросить монеты</string>
-	<string name="button_send_coins">Отправить монеты</string>
+	<string name="button_request_coins">Запросить</string>
+	<string name="button_send_coins">Отправить</string>
 	<string name="button_scan">Сканировать</string>
 	<string name="button_edit_address">Добавить/изменить адрес</string>
 	<string name="button_settings">Настройки</string>

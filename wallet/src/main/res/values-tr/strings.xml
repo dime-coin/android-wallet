@@ -194,8 +194,8 @@
 	<string name="button_share">Paylaş</string>
 	<string name="button_set_as_default">Varsayılan olarak ayarla</string>
 
-	<string name="button_request_coins">Dimecoin talep et</string>
-	<string name="button_send_coins">Dimecoin gönder</string>
+	<string name="button_request_coins">Istemek</string>
+	<string name="button_send_coins">Gönder</string>
 	<string name="button_scan">Tara</string>
 	<string name="button_edit_address">Adres ilâve et/düzenle</string>
 	<string name="button_settings">Ayarlar</string>

@@ -68,7 +68,7 @@
 	<string name="button_add">添加</string>
 	<string name="button_delete">删除</string>
 	<string name="button_share">分享</string>
-	<string name="button_request_coins">向他人索取夸克币</string>
-	<string name="button_send_coins">发送夸克币</string>
+	<string name="button_request_coins">要求</string>
+	<string name="button_send_coins">发送</string>
 
 </resources>

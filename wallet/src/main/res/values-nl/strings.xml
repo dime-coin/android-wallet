@@ -70,7 +70,7 @@
 	<string name="button_add">Toevoegen</string>
 	<string name="button_delete">Verwijderen</string>
 	<string name="button_share">Delen</string>
-	<string name="button_request_coins">Verzoek Dimecoins</string>
-	<string name="button_send_coins">Verzend Dimecoins</string>
+	<string name="button_request_coins">Verzoek</string>
+	<string name="button_send_coins">Verzend</string>
 
 </resources>

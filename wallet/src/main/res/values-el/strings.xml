@@ -74,7 +74,7 @@
 	<string name="button_add">Προσθήκη</string>
 	<string name="button_delete">Διαγραφή</string>
 	<string name="button_share">Μοιραστείτε</string>
-	<string name="button_request_coins">Ζητήστε νομίσματα</string>
-	<string name="button_send_coins">Αποστολή νομισμάτων</string>
+	<string name="button_request_coins">Ζητήστε</string>
+	<string name="button_send_coins">Αποστολή</string>
 
 </resources>

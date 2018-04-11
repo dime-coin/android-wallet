@@ -173,8 +173,8 @@
 	<string name="button_paste">Dán</string>
 	<string name="button_share">Chia sẻ</string>
 	<string name="button_set_as_default">Đặt làm mặc định</string>
-	<string name="button_request_coins">Yêu cầu coin</string>
-	<string name="button_send_coins">Gửi coin</string>
+	<string name="button_request_coins">Yêu cầu</string>
+	<string name="button_send_coins">Gửi</string>
 	<string name="button_scan">Quét</string>
 	<string name="button_edit_address">Thêm/chỉnh sửa địa chỉ</string>
 	<string name="button_settings">Thiết lập</string>
