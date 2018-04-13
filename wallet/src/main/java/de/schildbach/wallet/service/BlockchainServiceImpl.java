@@ -39,6 +39,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import android.annotation.SuppressLint;
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
@@ -52,6 +53,7 @@ import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Binder;
+import android.os.Build;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.PowerManager;
@@ -64,6 +66,7 @@ import com.google.bitcoin.core.Address;
 import com.google.bitcoin.core.Block;
 import com.google.bitcoin.core.BlockChain;
 import com.google.bitcoin.core.CheckpointManager;
+import com.google.bitcoin.core.CoinDefinition;
 import com.google.bitcoin.core.Peer;
 import com.google.bitcoin.core.PeerEventListener;
 import com.google.bitcoin.core.PeerGroup;
@@ -115,6 +118,7 @@ public class BlockchainServiceImpl extends android.app.Service implements Blockc
 
 	private PeerConnectivityListener peerConnectivityListener;
 	private NotificationManager nm;
+	private static final String DIMECOIN_NOTIFICATIONS = "dimecoin_notifications";
 	private static final int NOTIFICATION_ID_CONNECTED = 0;
 	private static final int NOTIFICATION_ID_COINS_RECEIVED = 1;
 
@@ -218,7 +222,7 @@ public class BlockchainServiceImpl extends android.app.Service implements Blockc
 			text.append(label != null ? label : addressStr);
 		}
 
-		final NotificationCompat.Builder notification = new NotificationCompat.Builder(this);
+		final NotificationCompat.Builder notification = new NotificationCompat.Builder(this, DIMECOIN_NOTIFICATIONS);
 		notification.setSmallIcon(R.drawable.stat_notify_received);
 		notification.setTicker(tickerMsg);
 		notification.setContentTitle(msg);
@@ -289,7 +293,7 @@ public class BlockchainServiceImpl extends android.app.Service implements Blockc
 					}
 					else
 					{
-						final NotificationCompat.Builder notification = new NotificationCompat.Builder(BlockchainServiceImpl.this);
+						final NotificationCompat.Builder notification = new NotificationCompat.Builder(BlockchainServiceImpl.this, DIMECOIN_NOTIFICATIONS);
 						notification.setSmallIcon(R.drawable.stat_sys_peers, numPeers > 4 ? 4 : numPeers);
 						notification.setContentTitle(getString(R.string.app_name));
 						notification.setContentText(getString(R.string.notification_peers_connected_msg, numPeers));
@@ -586,6 +590,11 @@ public class BlockchainServiceImpl extends android.app.Service implements Blockc
 		super.onCreate();
 
 		nm = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+			NotificationChannel notificationChannel = new NotificationChannel(DIMECOIN_NOTIFICATIONS, CoinDefinition.coinName, NotificationManager.IMPORTANCE_DEFAULT);
+			nm.createNotificationChannel(notificationChannel);
+		}
 
 		final String lockName = getPackageName() + " blockchain sync";
 
