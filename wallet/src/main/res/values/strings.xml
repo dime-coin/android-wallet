@@ -165,7 +165,6 @@
 	<string name="preferences_activity_title">Settings</string>
 	<string name="preferences_category_main">Preferences</string>
 	<string name="preferences_category_diagnostics">Diagnostics</string>
-	<string name="preferences_category_labs">Labs</string>
 	<string name="preferences_precision_title">Denomination and precision</string>
 	<string name="preferences_precision_summary">Unit to show amounts in. This does not affect computations.</string>
 	<string name="preferences_connectivity_notification_title">Connectivity Indicator</string>

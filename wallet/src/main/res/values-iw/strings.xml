@@ -120,8 +120,7 @@
 	<string name="preferences_activity_title">הגדרות</string>
 	<string name="preferences_category_main">העדפות</string>
 	<string name="preferences_category_diagnostics">בדיקה</string>
-	<string name="preferences_category_labs">מעבדות</string>
-	<string name="preferences_connectivity_notification_title">מצב קישוריות</string>
+    <string name="preferences_connectivity_notification_title">מצב קישוריות</string>
 	<string name="preferences_connectivity_notification_summary">הראה את מספר השכנים הקשורים</string>
 	<string name="preferences_trusted_peer_title">שכן מהימן</string>
 	<string name="preferences_trusted_peer_summary">IP or hostname of single peer to connect to.</string>

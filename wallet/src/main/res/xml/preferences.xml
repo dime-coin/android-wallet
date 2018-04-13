@@ -42,32 +42,4 @@
 			android:summary="@string/preferences_initiate_reset_summary"
 			android:title="@string/preferences_initiate_reset_title" />
 	</PreferenceCategory>
-	<PreferenceCategory android:title="@string/preferences_category_labs" >
-		<Preference
-			android:icon="@drawable/ic_menu_warning"
-			android:summary="This is all unfinished stuff. Use at your own risk!"
-			android:title="Warning" />
-
-		<CheckBoxPreference
-			android:defaultValue="true"
-			android:key="disclaimer"
-			android:summary="Have you really read the safety notes? Did you already back up your private keys to a safe place?"
-			android:title="Show disclaimer" />
-		<CheckBoxPreference
-			android:defaultValue="false"
-			android:key="labs_qr_payment_request"
-			android:summary="Use payment protocol for QR-code initiated payments"
-			android:title="Scan-to-pay" />
-		<CheckBoxPreference
-			android:defaultValue="false"
-			android:key="labs_nfc_payment_request"
-			android:summary="Use payment protocol for NFC initiated payments"
-			android:title="Tap-to-pay" />
-		<CheckBoxPreference
-			android:defaultValue="false"
-			android:key="labs_bluetooth_offline_transactions"
-			android:summary="Accept signed transactions via Bluetooth radio. Requires Android 4.3 or higher."
-			android:title="Bluetooth offline transactions" />
-	</PreferenceCategory>
-
 </PreferenceScreen>

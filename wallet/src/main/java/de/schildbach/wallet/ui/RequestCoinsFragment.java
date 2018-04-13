@@ -276,10 +276,6 @@ public final class RequestCoinsFragment extends Fragment
 
 		loaderManager.initLoader(ID_RATE_LOADER, null, rateLoaderCallbacks);
 
-		final boolean labsBluetoothOfflineTransactionsEnabled = config.getBluetoothOfflineTransactionsEnabled();
-		if (bluetoothAdapter != null && labsBluetoothOfflineTransactionsEnabled)
-			maybeInitBluetoothListening();
-
 		updateView();
 	}
 
@@ -385,24 +381,14 @@ public final class RequestCoinsFragment extends Fragment
 			return;
 
 		final String bitcoinRequest = determineBitcoinRequestStr(true);
-		final byte[] paymentRequest = determinePaymentRequest(true);
 
 		// update qr-code
 		final int size = (int) (256 * getResources().getDisplayMetrics().density);
-		final String qrContent;
-		if (config.getQrPaymentRequestEnabled())
-			qrContent = "BITCOIN:-" + Qr.encodeBinary(paymentRequest);
-		else
-			qrContent = bitcoinRequest;
-		qrCodeBitmap = Qr.bitmap(qrContent, size);
+		qrCodeBitmap = Qr.bitmap(bitcoinRequest, size);
 		qrView.setImageBitmap(qrCodeBitmap);
 
 		// update nfc ndef message
-		final boolean nfcSuccess;
-		if (config.getNfcPaymentRequestEnabled())
-			nfcSuccess = Nfc.publishMimeObject(nfcManager, activity, Constants.MIMETYPE_PAYMENTREQUEST, paymentRequest, false);
-		else
-			nfcSuccess = Nfc.publishUri(nfcManager, activity, bitcoinRequest);
+		final boolean nfcSuccess = Nfc.publishUri(nfcManager, activity, bitcoinRequest);
 
 		// update initiate request message
 		final SpannableStringBuilder initiateText = new SpannableStringBuilder(getString(R.string.request_coins_fragment_initiate_request_qr));
@@ -445,16 +431,6 @@ public final class RequestCoinsFragment extends Fragment
 			uri.append(Bluetooth.MAC_URI_PARAM).append('=').append(bluetoothMac);
 		}
 		return uri.toString();
-	}
-
-	private byte[] determinePaymentRequest(final boolean includeBluetoothMac)
-	{
-		final ECKey key = (ECKey) addressView.getSelectedItem();
-		final Address address = key.toAddress(Constants.NETWORK_PARAMETERS);
-
-		return createPaymentRequest(amountCalculatorLink.getAmount(), address,
-				includeLabelView.isChecked() ? AddressBookProvider.resolveLabel(activity, address.toString()) : null, includeBluetoothMac
-						&& bluetoothMac != null ? "bt:" + bluetoothMac : null);
 	}
 
 	private static byte[] createPaymentRequest(final BigInteger amount, @Nonnull final Address toAddress, final String memo, final String paymentUrl)

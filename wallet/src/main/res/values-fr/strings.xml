@@ -153,8 +153,7 @@
 
 	<string name="preferences_category_main">Préférences</string>
 	<string name="preferences_category_diagnostics">Diagnostics</string>
-	<string name="preferences_category_labs">Labos</string>
-	<string name="preferences_precision_title">Dénomination et précison</string>
+    <string name="preferences_precision_title">Dénomination et précison</string>
 	<string name="preferences_precision_summary">Unité à utiliser pour l\'affichage. Ceci n\'affecte pas les calculs.</string>
 	<string name="preferences_connectivity_notification_title">Indicateur de connectivité</string>
 	<string name="preferences_connectivity_notification_summary">Affiche le nombre de pairs connectés dans la zone de notification.</string>

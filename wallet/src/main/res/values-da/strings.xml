@@ -139,8 +139,7 @@
 	<string name="preferences_activity_title">Opsætning</string>
 	<string name="preferences_category_main">Indstillinger</string>
 	<string name="preferences_category_diagnostics">Diagnostik</string>
-	<string name="preferences_category_labs">Laboratoriet</string>
-	<string name="preferences_precision_title">Denominering og præcision</string>
+    <string name="preferences_precision_title">Denominering og præcision</string>
 	<string name="preferences_precision_summary">Enhed som beløb vises i. Dette påvirker ikke beregninger.</string>
 	<string name="preferences_connectivity_notification_title">Forbindelsesindikator</string>
 	<string name="preferences_connectivity_notification_summary">Vis aktuelt antal af forbundne peers i notifikationsområdet.</string>

@@ -84,9 +84,6 @@ public final class PreferencesActivity extends PreferenceActivity implements OnP
 		final Preference dataUsagePreference = findPreference(PREFS_KEY_DATA_USAGE);
 		dataUsagePreference.setEnabled(getPackageManager().resolveActivity(dataUsageIntent, 0) != null);
 
-		final Preference bluetoothOfflineTransactionsPreference = findPreference(Configuration.PREFS_KEY_LABS_BLUETOOTH_OFFLINE_TRANSACTIONS);
-		bluetoothOfflineTransactionsPreference.setEnabled(Build.VERSION.SDK_INT >= Constants.SDK_JELLY_BEAN_MR2);
-
 		final SharedPreferences prefs = getPreferenceManager().getSharedPreferences();
 		final String trustedPeer = prefs.getString(Configuration.PREFS_KEY_TRUSTED_PEER, "").trim();
 		updateTrustedPeer(trustedPeer);

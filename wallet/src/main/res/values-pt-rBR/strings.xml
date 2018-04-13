@@ -149,8 +149,7 @@
 	<string name="preferences_activity_title">Configurações</string>
 	<string name="preferences_category_main">Preferências</string>
 	<string name="preferences_category_diagnostics">Diagnósticos</string>
-	<string name="preferences_category_labs">Labs</string>
-	<string name="preferences_precision_title">Denominação e precisão</string>
+    <string name="preferences_precision_title">Denominação e precisão</string>
 	<string name="preferences_precision_summary">Unidade para mostrar valores. Isso não afeta os cálculos.</string>
 	<string name="preferences_connectivity_notification_title">Indicador de conectividade</string>
 	<string name="preferences_connectivity_notification_summary">Mostrar número atual de pares conectados na área de transferência.</string>

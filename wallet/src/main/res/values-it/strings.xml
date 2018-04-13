@@ -145,8 +145,7 @@
 	<string name="preferences_activity_title">Impostazioni</string>
 	<string name="preferences_category_main">Preferenze</string>
 	<string name="preferences_category_diagnostics">Diagnostica</string>
-	<string name="preferences_category_labs">Laboratori</string>
-	<string name="preferences_precision_title">Denominazione e precisione</string>
+    <string name="preferences_precision_title">Denominazione e precisione</string>
 	<string name="preferences_precision_summary">Unità per mostrare gli importi. Questo non influisce calcoli.</string>
 	<string name="preferences_connectivity_notification_title">Indicatore di connettività</string>
 	<string name="preferences_connectivity_notification_summary">Mostra il numero corrente di peer connessi nell\'area di notifica.</string>

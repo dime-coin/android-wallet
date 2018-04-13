@@ -108,7 +108,7 @@ public final class WalletDisclaimerFragment extends Fragment implements OnShared
 	@Override
 	public void onSharedPreferenceChanged(final SharedPreferences sharedPreferences, final String key)
 	{
-		if (Configuration.PREFS_KEY_DISCLAIMER.equals(key) || Configuration.PREFS_KEY_REMIND_BACKUP.equals(key))
+		if (Configuration.PREFS_KEY_REMIND_BACKUP.equals(key))
 			updateView();
 	}
 
@@ -118,7 +118,6 @@ public final class WalletDisclaimerFragment extends Fragment implements OnShared
 			return;
 
 		final boolean showBackup = config.remindBackup();
-		final boolean showDisclaimer = config.getDisclaimerEnabled();
 
 		final int progressResId;
 		if (download == BlockchainService.ACTION_BLOCKCHAIN_STATE_DOWNLOAD_OK)
@@ -133,14 +132,13 @@ public final class WalletDisclaimerFragment extends Fragment implements OnShared
 		final SpannableStringBuilder text = new SpannableStringBuilder();
 		if (progressResId != 0)
 			text.append(Html.fromHtml("<b>" + getString(progressResId) + "</b>"));
-		if (progressResId != 0 && (showBackup || showDisclaimer))
+		if (progressResId != 0)
 			text.append('\n');
 		if (showBackup)
 			text.append(Html.fromHtml(getString(R.string.wallet_disclaimer_fragment_remind_backup)));
-		if (showBackup && showDisclaimer)
+		if (showBackup)
 			text.append('\n');
-		if (showDisclaimer)
-			text.append(Html.fromHtml(getString(R.string.wallet_disclaimer_fragment_remind_safety)));
+		text.append(Html.fromHtml(getString(R.string.wallet_disclaimer_fragment_remind_safety)));
 		messageView.setText(text);
 
 		final View view = getView();

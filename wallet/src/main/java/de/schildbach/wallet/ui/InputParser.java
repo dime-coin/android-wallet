@@ -73,24 +73,7 @@ public abstract class InputParser
 		@Override
 		public void parse()
 		{
-			if (input.startsWith(CoinDefinition.coinURIScheme.toUpperCase()+ ":-"))       //TODO:  Not sure what this is for?
-			{
-				try
-				{
-					final byte[] serializedPaymentRequest = Qr.decodeBinary(input.substring(9));
-
-					parseAndHandlePaymentRequest(serializedPaymentRequest);
-				}
-				catch (final PaymentRequestException x)
-				{
-					error(R.string.input_parser_invalid_paymentrequest, x.getMessage());
-				}
-				catch (final IOException x)
-				{
-					error(R.string.input_parser_io_error, x.getMessage());
-				}
-			}
-			else if (input.startsWith(CoinDefinition.coinURIScheme +":") || input.startsWith(CoinDefinition.coinURIScheme2+":"))
+			if (input.startsWith(CoinDefinition.coinURIScheme +":") || input.startsWith(CoinDefinition.coinURIScheme2+":"))
 			{
 				try
 				{

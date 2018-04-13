@@ -44,11 +44,7 @@ public class Configuration
 	public static final String PREFS_KEY_EXCHANGE_CURRENCY = "exchange_currency";
 	public static final String PREFS_KEY_TRUSTED_PEER = "trusted_peer";
 	public static final String PREFS_KEY_TRUSTED_PEER_ONLY = "trusted_peer_only";
-	public static final String PREFS_KEY_DISCLAIMER = "disclaimer";
 	public static final String PREFS_KEY_SELECTED_ADDRESS = "selected_address";
-	private static final String PREFS_KEY_LABS_QR_PAYMENT_REQUEST = "labs_qr_payment_request";
-	private static final String PREFS_KEY_LABS_NFC_PAYMENT_REQUEST = "labs_nfc_payment_request";
-	public static final String PREFS_KEY_LABS_BLUETOOTH_OFFLINE_TRANSACTIONS = "labs_bluetooth_offline_transactions";
 
 	private static final String PREFS_KEY_LAST_VERSION = "last_version";
 	private static final String PREFS_KEY_LAST_USED = "last_used";
@@ -127,11 +123,6 @@ public class Configuration
 		prefs.edit().putBoolean(PREFS_KEY_REMIND_BACKUP, false).commit();
 	}
 
-	public boolean getDisclaimerEnabled()
-	{
-		return prefs.getBoolean(PREFS_KEY_DISCLAIMER, true);
-	}
-
 	public String getSelectedAddress()
 	{
 		return prefs.getString(PREFS_KEY_SELECTED_ADDRESS, null);
@@ -150,21 +141,6 @@ public class Configuration
 	public void setExchangeCurrencyCode(final String exchangeCurrencyCode)
 	{
 		prefs.edit().putString(PREFS_KEY_EXCHANGE_CURRENCY, exchangeCurrencyCode).commit();
-	}
-
-	public boolean getQrPaymentRequestEnabled()
-	{
-		return prefs.getBoolean(PREFS_KEY_LABS_QR_PAYMENT_REQUEST, false);
-	}
-
-	public boolean getNfcPaymentRequestEnabled()
-	{
-		return prefs.getBoolean(PREFS_KEY_LABS_NFC_PAYMENT_REQUEST, false);
-	}
-
-	public boolean getBluetoothOfflineTransactionsEnabled()
-	{
-		return prefs.getBoolean(PREFS_KEY_LABS_BLUETOOTH_OFFLINE_TRANSACTIONS, false);
 	}
 
 	public boolean versionCodeCrossed(final int currentVersionCode, final int triggeringVersionCode)

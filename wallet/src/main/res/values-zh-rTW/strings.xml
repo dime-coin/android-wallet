@@ -139,8 +139,7 @@
 	<string name="preferences_activity_title">設定</string>
 	<string name="preferences_category_main">偏好</string>
 	<string name="preferences_category_diagnostics">診斷</string>
-	<string name="preferences_category_labs">實驗室功能</string>
-	<string name="preferences_precision_title">顯示單位</string>
+    <string name="preferences_precision_title">顯示單位</string>
 	<string name="preferences_precision_summary">改變顯示單位，但不影響計算。</string>
 	<string name="preferences_connectivity_notification_title">連線指示</string>
 	<string name="preferences_connectivity_notification_summary">顯示目前連線節點數量到通知區。</string>

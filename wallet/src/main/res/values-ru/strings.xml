@@ -144,8 +144,7 @@
 	<string name="preferences_activity_title">Настройки</string>
 	<string name="preferences_category_main">Параметры</string>
 	<string name="preferences_category_diagnostics">Диагностика</string>
-	<string name="preferences_category_labs">Лаборатория</string>
-	<string name="preferences_precision_title">Деноминация и точность</string>
+    <string name="preferences_precision_title">Деноминация и точность</string>
 	<string name="preferences_precision_summary">Единицы, в которых отображаются суммы. Не влияет на вычисления.</string>
 	<string name="preferences_connectivity_notification_title">Индикатор соединения</string>
 	<string name="preferences_connectivity_notification_summary">Показать текущее число подключений в области уведомлений.</string>

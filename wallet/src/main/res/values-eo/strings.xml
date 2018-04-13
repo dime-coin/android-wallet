@@ -139,8 +139,7 @@
 	<string name="preferences_activity_title">Agoroj</string>
 	<string name="preferences_category_main">Pli d\'Agordoj</string>
 	<string name="preferences_category_diagnostics">Diagnozo</string>
-	<string name="preferences_category_labs">Labs</string>
-	<string name="preferences_precision_title">Nomado kaj precizeco</string>
+    <string name="preferences_precision_title">Nomado kaj precizeco</string>
 	<string name="preferences_precision_summary">Unueco por montri kvantojn. Ĉi tio ne afektas komputadojn.</string>
 	<string name="preferences_connectivity_notification_title">Indikilo pri Konekteco</string>
 	<string name="preferences_connectivity_notification_summary">Montru aktualan nombron da konektitaj kolegoj en la sciiga areo.</string>

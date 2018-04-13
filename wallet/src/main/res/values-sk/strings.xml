@@ -139,8 +139,7 @@
 	<string name="preferences_activity_title">Nastavenia</string>
 	<string name="preferences_category_main">Predvoľby</string>
 	<string name="preferences_category_diagnostics">Diagnostika</string>
-	<string name="preferences_category_labs">Labs</string>
-	<string name="preferences_precision_title">Jednotka a presnosť</string>
+    <string name="preferences_precision_title">Jednotka a presnosť</string>
 	<string name="preferences_precision_summary">Jednotka pre zobrazenie sumy. Neovplyvňuje výpočty.</string>
 	<string name="preferences_connectivity_notification_title">Indikátor pripojenia</string>
 	<string name="preferences_connectivity_notification_summary">Zobraziť počet pripojených uzlov v oznamovacej oblasti.</string>

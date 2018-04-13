@@ -181,8 +181,7 @@
 	<string name="preferences_activity_title">Einstellungen</string>
 	<string name="preferences_category_main">Einstellungen</string>
 	<string name="preferences_category_diagnostics">Diagnose</string>
-	<string name="preferences_category_labs">Labor</string>
-	<string name="preferences_precision_title">Stückelung und Genauigkeit</string>
+    <string name="preferences_precision_title">Stückelung und Genauigkeit</string>
 	<string name="preferences_precision_summary">Maßeinheit für die Anzeige von Werten. Dies beeinflußt keine Berechnungen.</string>
 	<string name="preferences_connectivity_notification_title">Konnektivitäts-Anzeige</string>
 	<string name="preferences_connectivity_notification_summary">Zeigt die aktuelle Anzahl von verbundenen Peers im Notifizierungsbereich an.</string>

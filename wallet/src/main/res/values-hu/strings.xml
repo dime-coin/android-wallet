@@ -144,8 +144,7 @@
 	<string name="preferences_activity_title">Beállítások</string>
 	<string name="preferences_category_main">Beállítások</string>
 	<string name="preferences_category_diagnostics">Diagnosztika</string>
-	<string name="preferences_category_labs">Labs</string>
-	<string name="preferences_precision_title">Pontosítás és egyszerűsítés</string>
+    <string name="preferences_precision_title">Pontosítás és egyszerűsítés</string>
 	<string name="preferences_precision_summary">Egység, amelyben mutatja a mennyiséget. Ez nem érinti a számításokat.</string>
 	<string name="preferences_connectivity_notification_title">Kapcsolódási szint</string>
 	<string name="preferences_connectivity_notification_summary">Mutassa a kapcsolódások aktuális számát az értesítési területen.</string>

@@ -141,8 +141,7 @@
 	<string name="preferences_activity_title">Ustawienia</string>
 	<string name="preferences_category_main">Preferencje</string>
 	<string name="preferences_category_diagnostics">Diagnostyka</string>
-	<string name="preferences_category_labs">Eksperymentalne</string>
-	<string name="preferences_precision_title">Waluta i precyzja</string>
+    <string name="preferences_precision_title">Waluta i precyzja</string>
 	<string name="preferences_precision_summary">Jednostka w której ma być podawana ilość. Nie wpływa na obliczenia.</string>
 	<string name="preferences_connectivity_notification_title">Wskaźnik połączenia</string>
 	<string name="preferences_connectivity_notification_summary">Wyświetl obecną liczbę połączonych partnerów w przestrzeni powiadomień.</string>
