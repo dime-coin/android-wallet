@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:orientation="vertical" >
+	xmlns:app="http://schemas.android.com/apk/res-auto">
 
 	<TableLayout
-		android:layout_width="match_parent"
-		android:layout_height="0px"
-		android:layout_weight="1"
-		android:background="@color/bg_panel" >
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:background="@color/bg_panel"
+		app:layout_constraintBottom_toTopOf="@+id/wallet_disclaimer_fragment"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
 
 		<TableRow>
 
@@ -32,7 +35,7 @@
 				android:layout_weight="1"
 				android:background="#efefef"
 				android:foreground="@drawable/fragment_shadow_horizontal_light"
-				android:foregroundGravity="top|fill_horizontal" >
+				android:foregroundGravity="top|fill_horizontal">
 
 				<fragment
 					android:id="@+id/exchange_rates_fragment"
@@ -47,7 +50,7 @@
 				android:layout_weight="4"
 				android:background="@android:color/white"
 				android:foreground="@drawable/fragment_shadow_horizontal_light"
-				android:foregroundGravity="top|fill_horizontal" >
+				android:foregroundGravity="top|fill_horizontal">
 
 				<fragment
 					android:id="@+id/wallet_transactions_fragment"
@@ -55,20 +58,26 @@
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:layout_gravity="bottom|center_horizontal" />
-
-				<fragment
-					android:id="@+id/wallet_actions_fragment"
-					android:name="de.schildbach.wallet.ui.WalletActionsFragment"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_gravity="bottom|end" />
 			</FrameLayout>
 		</TableRow>
 	</TableLayout>
 
 	<fragment
+		android:id="@+id/wallet_actions_fragment"
+		android:name="de.schildbach.wallet.ui.WalletActionsFragment"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="16dp"
+		android:layout_marginEnd="16dp"
+		app:layout_constraintBottom_toTopOf="@+id/wallet_disclaimer_fragment"
+		app:layout_constraintEnd_toEndOf="parent" />
+
+	<fragment
 		android:id="@+id/wallet_disclaimer_fragment"
 		android:name="de.schildbach.wallet.ui.WalletDisclaimerFragment"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content" />
-</LinearLayout>
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
