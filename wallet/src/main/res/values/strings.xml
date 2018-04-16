@@ -88,7 +88,6 @@
 	<string name="request_coins_fragment_bluetooth_enabled">Accepting payments via Bluetooth.</string>
 	<string name="request_coins_clipboard_msg">Dimecoin request copied to clipboard</string>
 	<string name="request_coins_share_dialog_title">Share request for Dimecoins…</string>
-	<string name="request_coins_options_local_app_title">Request from local app</string>
 	<string name="address_book_activity_title">Address Book</string>
 	<string name="address_book_list_receiving_title">Your addresses</string>
 	<string name="address_book_list_sending_title">Sending addresses</string>

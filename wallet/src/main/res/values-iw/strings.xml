@@ -64,7 +64,6 @@
 	<string name="request_coins_fragment_initiate_request_nfc">או גע עם מכשיר  NFC</string>
 	<string name="request_coins_clipboard_msg">בקשה הועתקה ללוח</string>
 	<string name="request_coins_share_dialog_title">שתף בקשה לביטקוין</string>
-	<string name="request_coins_options_local_app_title">בקשה מיישום מקומי</string>
 	<string name="address_book_activity_title">ספר כתובות</string>
 	<string name="address_book_list_receiving_title">בכתובת שלך</string>
 	<string name="address_book_list_sending_title">כתובת שליחה</string>

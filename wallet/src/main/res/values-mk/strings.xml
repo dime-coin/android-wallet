@@ -70,7 +70,6 @@
 	<string name="request_coins_fragment_bluetooth_enabled">Прифаќам плаќање преку Bluetooth.</string>
 	<string name="request_coins_clipboard_msg">Побарувањето за Биткони е копирано во склад</string>
 	<string name="request_coins_share_dialog_title">Сподели го побарувањето за Биткоини…</string>
-	<string name="request_coins_options_local_app_title">Побарај од локална апликација</string>
 	<string name="address_book_activity_title">Адресар</string>
 	<string name="address_book_list_receiving_title">Твои адреси</string>
 	<string name="address_book_list_sending_title">Испратени адреси</string>

@@ -352,10 +352,6 @@ public final class RequestCoinsFragment extends Fragment
 			case R.id.request_coins_options_copy:
 				handleCopy();
 				return true;
-
-			case R.id.request_coins_options_local_app:
-				handleLocalApp();
-				return true;
 		}
 
 		return super.onOptionsItemSelected(item);
@@ -366,13 +362,6 @@ public final class RequestCoinsFragment extends Fragment
 		final String request = determineBitcoinRequestStr(false);
 		clipboardManager.setText(request);
 		activity.toast(R.string.request_coins_clipboard_msg);
-	}
-
-	private void handleLocalApp()
-	{
-		final Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(determineBitcoinRequestStr(false)));
-		startActivity(intent);
-		activity.finish();
 	}
 
 	private void updateView()

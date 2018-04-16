@@ -72,7 +72,6 @@
 	<string name="request_coins_fragment_bluetooth_enabled">Akceptacja płatności przez Bluetooth</string>
 	<string name="request_coins_clipboard_msg">Prośbę o Dimecoiny skopiowano do schowka</string>
 	<string name="request_coins_share_dialog_title">Udostępnij prośbę o Dimecoiny…</string>
-	<string name="request_coins_options_local_app_title">Żądanie z lokalnej aplikacji</string>
 	<string name="address_book_activity_title">Książka adresowa</string>
 	<string name="address_book_list_receiving_title">Twoje adresy</string>
 	<string name="address_book_list_sending_title">Adresy nadawcze</string>

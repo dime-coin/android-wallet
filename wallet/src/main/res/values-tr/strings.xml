@@ -77,7 +77,6 @@
 	<string name="request_coins_fragment_bluetooth_enabled">Bluetooth aracılığıyla ödemeler kabul ediliyor.</string>
 	<string name="request_coins_clipboard_msg">Dimecoin talebi panoya kopyalandı</string>
 	<string name="request_coins_share_dialog_title">Dimecoin talebini yayınla…</string>
-	<string name="request_coins_options_local_app_title">Yerel uygulamadan talep</string>
 
 	<string name="address_book_activity_title">Adres defteri</string>
 	<string name="address_book_list_receiving_title">Alım adresleri</string>

@@ -77,7 +77,6 @@
 	<string name="request_coins_clipboard_msg">Solicitação de Dimecoin copiada</string>
 	<string name="request_coins_share_dialog_title">Compartilhar solicitação de Dimecoins…</string>
 
-	<string name="request_coins_options_local_app_title">Pedido de aplicação local</string>
 	<string name="address_book_activity_title">Catálogo de endereços</string>
 	<string name="address_book_list_receiving_title">Seus endereços</string>
 	<string name="address_book_list_sending_title">Endereços para envio</string>

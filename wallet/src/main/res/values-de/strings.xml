@@ -96,7 +96,6 @@
 	<string name="request_coins_fragment_bluetooth_enabled">Zahlungen via Bluetooth aktiviert.</string>
 	<string name="request_coins_clipboard_msg">Anforderung aufs Clipboard kopiert</string>
 	<string name="request_coins_share_dialog_title">Anforderung veröffentlichen…</string>
-	<string name="request_coins_options_local_app_title">Von lokaler App anfordern</string>
 
 	<string name="address_book_activity_title">Adressbuch</string>
 	<string name="address_book_list_receiving_title">Deine Adressen</string>

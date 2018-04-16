@@ -77,7 +77,6 @@
 	<string name="request_coins_fragment_bluetooth_enabled">Aceptar pagos a través de Bluetooth.</string>
 	<string name="request_coins_clipboard_msg">Solicitud de Dimecoins copiada al portapapeles</string>
 	<string name="request_coins_share_dialog_title">Compartir solicitud de Dimecoins…</string>
-	<string name="request_coins_options_local_app_title">Petición desde aplicación local</string>
 
 	<string name="address_book_activity_title">Libreta de direcciones</string>
 	<string name="address_book_list_receiving_title">Tus direcciones</string>

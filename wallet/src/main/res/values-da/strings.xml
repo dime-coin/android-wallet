@@ -70,7 +70,6 @@
 	<string name="request_coins_fragment_bluetooth_enabled">Accepterer betalinger via Bluetooth.</string>
 	<string name="request_coins_clipboard_msg">Dimecoin-forespørgsel kopieret til udklipsholderen</string>
 	<string name="request_coins_share_dialog_title">Del forespørgsel efter Dimecoins …</string>
-	<string name="request_coins_options_local_app_title">Forespørg fra lokal app</string>
 	<string name="address_book_activity_title">Adressebog</string>
 	<string name="address_book_list_receiving_title">Dine adresser</string>
 	<string name="address_book_list_sending_title">Sender adresser</string>
