@@ -88,7 +88,6 @@ public class Constants
 	public static final int MBTC_MAX_PRECISION = 2;     // Maximum of 2 decimal places for mDIME
 	public static final int LOCAL_PRECISION = 6;        //Dimecoin in BTC, USD, etc
 
-	public static final String DONATION_ADDRESS = CoinDefinition.DONATION_ADDRESS;
 	public static final String REPORT_EMAIL = "support@dimecoin.com.co";
 
 	public static final String REPORT_SUBJECT_ISSUE = "Reported issue";

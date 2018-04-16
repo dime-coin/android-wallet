@@ -35,8 +35,6 @@
 	<string name="wallet_transactions_context_show_qr_title">Pokaż kod QR</string>
 	<string name="wallet_options_backup">Utwórz kopię zapasową kluczy</string>
 	<string name="wallet_options_safety">Wskazówki bezpieczeństwa</string>
-	<string name="wallet_options_donate">Podaruj</string>
-	<string name="wallet_donate_address_label">Dotacje dla Dimecoin Wallet</string>
 	<string name="wallet_low_storage_dialog_title">Mało przestrzeni w pamięci wewnętrznej!</string>
 	<string name="wallet_low_storage_dialog_msg">Dimecoin Wallet używa pamięci wewnętrznej do zapisywania transakcji i bloków. Jeżeli zabraknie mu przestrzeni, portfel przestanie pracować, a Twoje Dimecoiny zostaną narażone na ryzyko!\n\nCzy chcesz otworzyć manager aplikacji, żeby odinstalować niepotrzebne aplikacje?</string>
 	<string name="wallet_low_storage_dialog_button_apps">Zarządzaj aplikacjami</string>

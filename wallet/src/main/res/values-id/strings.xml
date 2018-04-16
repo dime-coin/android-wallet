@@ -34,8 +34,6 @@
 	<string name="wallet_transactions_fragment_internal">Internal</string>
 	<string name="wallet_options_backup">Cadangkan Kunci</string>
 	<string name="wallet_options_safety">Nota keamanan</string>
-	<string name="wallet_options_donate">Tip / Donasi</string>
-	<string name="wallet_donate_address_label">Donasi untuk Dimecoin Wallet</string>
 	<string name="wallet_low_storage_dialog_title">Penyimpanan Internal tdk cukup!</string>
 	<string name="wallet_low_storage_dialog_msg">Dimecoin Wallet menggunakan penyimpanan internal untuk meyimpan transaksi dan blok. Jika kekurangan ruang, ia akan berhenti berfungsi dan Dimecoin Anda dlm bahaya!\n\nApakah Anda ingin buka Manajer Aplikasi untuk menghapus apl tak terpakai?</string>
 	<string name="wallet_low_storage_dialog_button_apps">Mengelola Apl</string>

@@ -41,10 +41,6 @@
 		app:showAsAction="never"
 		android:title="@string/wallet_options_safety"/>
 	<item
-		android:id="@+id/wallet_options_donate"
-		app:showAsAction="never"
-		android:title="@string/wallet_options_donate"/>
-	<item
 		android:id="@+id/wallet_options_help"
 		app:showAsAction="never"
 		android:title="@string/button_help"/>

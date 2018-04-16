@@ -35,8 +35,6 @@
 	<string name="wallet_transactions_context_show_qr_title">Vis QR-kode</string>
 	<string name="wallet_options_backup">Sikkerhedskopiér nøgler</string>
 	<string name="wallet_options_safety">Sikkerhedsnoter</string>
-	<string name="wallet_options_donate">Giv drikkepenge / donér</string>
-	<string name="wallet_donate_address_label">Donér til Dimecoin Wallet</string>
 	<string name="wallet_low_storage_dialog_title">Intern enheds lagerplads er lav!</string>
 	<string name="wallet_low_storage_dialog_msg">Dimecoin Wallet bruger intern lager til at huske transaktioner of blokke. Hvis den løber tør for plads, vil den stoppe med at virke og dine Dimecoins vil risikeres!\n\nVil du åbne app-håndteringen for at afinstallere ubrugte apps?</string>
 	<string name="wallet_low_storage_dialog_button_apps">Håndtér apps</string>

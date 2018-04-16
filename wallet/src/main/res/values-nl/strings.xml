@@ -16,7 +16,6 @@
 	<string name="wallet_transactions_fragment_empty_text_received">Nog geen Dimecoins ontvangen</string>
 	<string name="wallet_transactions_fragment_empty_text_sent">Not geen Dimecoins verzonden</string>
 	<string name="wallet_options_safety">Veiligheids voorschriften</string>
-	<string name="wallet_options_donate">Doneren</string>
 	<string name="wallet_low_storage_dialog_title">Interne opslagruimte van het apparaat is laag!</string>
 	<string name="wallet_low_storage_dialog_msg">Dimecoin Wallet gebruikt interne opslag voor het bewaren van transacties en blokken. Als er onvoldoende opslag ruimte is zal het programma niet juist meer werken en zijn uw Dimecoins in gevaar!\n\nWilt u Applicatie beheer openen om overbodige applicaties te verwijderen?</string>
 	<string name="wallet_low_storage_dialog_button_apps">Applicatie beheer</string>

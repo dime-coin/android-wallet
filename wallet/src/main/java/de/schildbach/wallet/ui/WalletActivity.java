@@ -237,8 +237,6 @@ public final class WalletActivity extends AbstractOnDemandServiceActivity implem
 		super.onCreateOptionsMenu(menu);
 
 		getMenuInflater().inflate(R.menu.wallet_options, menu);
-		menu.findItem(R.id.wallet_options_donate).setVisible(!Constants.TEST);
-
 		return true;
 	}
 
@@ -303,10 +301,6 @@ public final class WalletActivity extends AbstractOnDemandServiceActivity implem
 				HelpDialogFragment.page(getSupportFragmentManager(), R.string.help_safety);
 				return true;
 
-			case R.id.wallet_options_donate:
-				handleDonate();
-				return true;
-
 			case R.id.wallet_options_help:
 				HelpDialogFragment.page(getSupportFragmentManager(), R.string.help_wallet);
 				return true;
@@ -339,19 +333,6 @@ public final class WalletActivity extends AbstractOnDemandServiceActivity implem
 		showDialog(DIALOG_EXPORT_KEYS);
 
 		config.disarmBackupReminder();
-	}
-
-	private void handleDonate()
-	{
-		try
-		{
-			SendCoinsActivity.start(this, PaymentIntent.fromAddress(Constants.DONATION_ADDRESS, getString(R.string.wallet_donate_address_label)));
-		}
-		catch (final AddressFormatException x)
-		{
-			// cannot happen, address is hardcoded
-			throw new RuntimeException(x);
-		}
 	}
 
 	@Override

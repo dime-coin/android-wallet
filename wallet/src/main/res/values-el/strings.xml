@@ -16,7 +16,6 @@
 	<string name="wallet_transactions_fragment_empty_text_received">Δεν έχει ληφθεί κάποιο Dimecoin μέχρι στιγμής</string>
 	<string name="wallet_transactions_fragment_empty_text_sent">Δεν έχει ληφθεί σταλεί Dimecoin μέχρι στιγμής</string>
 	<string name="wallet_options_safety">Οδηγίες ασφαλείας</string>
-	<string name="wallet_options_donate">Δωρίστε</string>
 	<string name="wallet_low_storage_dialog_title">Η εσωτερική μνήμη της συσκευής είναι χαμηλή!</string>
 	<string name="wallet_low_storage_dialog_msg">Το πορτοφόλι Dimecoin χρησιμοποιεί την εσωτερική μνήμη για να θυμάται τις συναλλαγές και τα μπλοκ. Αν ξεμείνει από
 χώρο, θα σταματήσει να λειτουργεί και τα Dimecoins σας θα είναι σε κίνδυνο! \n\nΘέλετε να ανοίξετε τη Διαχείριση εφαρμογών, προκειμένου να

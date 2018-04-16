@@ -24,7 +24,6 @@
 	<string name="wallet_transactions_fragment_empty_text_sent">Inga Dimecoins har hittills skickats</string>
 	<string name="wallet_transactions_fragment_coinbase">genererade</string>
 	<string name="wallet_options_safety">Säkerhetsinfo</string>
-	<string name="wallet_options_donate">Donera</string>
 	<string name="wallet_low_storage_dialog_title">Interna utrymmet på telefonen börjar ta slut!</string>
 	<string name="wallet_low_storage_dialog_msg">Dimecoin Wallet använder internt utrymme för att spara transaktioner och block. Om den får slut på utrymme så kommer den att sluta fungera, och dina Dimecoins kan försvinna!\n\nVill du öppna Applikationshanteraren för att avinstallera onödiga appar?</string>
 	<string name="wallet_low_storage_dialog_button_apps">Hantera appar</string>

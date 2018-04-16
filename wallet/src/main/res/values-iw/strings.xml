@@ -31,8 +31,6 @@
 	<string name="wallet_transactions_fragment_coinbase">נכרו</string>
 	<string name="wallet_options_backup">מפתחות גיבוי</string>
 	<string name="wallet_options_safety">הוראות בטיחות</string>
-	<string name="wallet_options_donate">תרומה</string>
-	<string name="wallet_donate_address_label"></string>
 	<string name="wallet_low_storage_dialog_title">אין מקום פנוי על המכשיר</string>
 	<string name="wallet_low_storage_dialog_msg">ארנק הביטקויין זקוק למקום פנוי על מנת לשעבוד תקין, ללא מקום פנוי הארנק שלך בסכנה. האם לפתוח ישומים להסרה ?</string>
 	<string name="wallet_low_storage_dialog_button_apps">נהל יישומים</string>

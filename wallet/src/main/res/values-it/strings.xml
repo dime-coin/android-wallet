@@ -35,8 +35,6 @@
 	<string name="wallet_transactions_context_show_qr_title">Mostra codice QR</string>
 	<string name="wallet_options_backup">Backup delle Chiavi</string>
 	<string name="wallet_options_safety">Note di sicurezza</string>
-	<string name="wallet_options_donate">Donazioni</string>
-	<string name="wallet_donate_address_label">Donazione per Dimecoin Wallet</string>
 	<string name="wallet_low_storage_dialog_title">Spazio di memorizzazione interno quasi esaurito!</string>
 	<string name="wallet_low_storage_dialog_msg">Dimecoin Wallet usa una memoria interna per memorizzare transazioni e blocchi. Se si esaurisce lo spazio, smetterà di funzionare e i tuoi Dimecoin saranno a rischio!\n\nVuoi aprire il Gestore delle Applicazioni per disinstallare app non necessarie?</string>
 	<string name="wallet_low_storage_dialog_button_apps">Gestisci applicazioni</string>
