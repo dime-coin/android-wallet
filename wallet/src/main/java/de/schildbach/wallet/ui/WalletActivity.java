@@ -186,7 +186,7 @@ public final class WalletActivity extends AbstractOnDemandServiceActivity implem
 	public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
 		if (requestCode == REQUEST_CAMERA_PERMISSION) {
 			if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
-				startActivityForResult(new Intent(this, ScanActivity.class), REQUEST_CODE_SCAN);
+				handleScan();
 			}
 		}
 		if (requestCode == REQUEST_READ_PERMISSION) {
@@ -282,11 +282,7 @@ public final class WalletActivity extends AbstractOnDemandServiceActivity implem
 				return true;
 
 			case R.id.wallet_options_export_keys:
-				if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-					ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_WRITE_PERMISSION);
-				} else {
-					handleExportKeys();
-				}
+				handleExportKeys();
 				return true;
 
 			case R.id.wallet_options_preferences:
@@ -330,9 +326,12 @@ public final class WalletActivity extends AbstractOnDemandServiceActivity implem
 
 	public void handleExportKeys()
 	{
-		showDialog(DIALOG_EXPORT_KEYS);
-
-		config.disarmBackupReminder();
+		if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+			ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_WRITE_PERMISSION);
+		} else {
+			showDialog(DIALOG_EXPORT_KEYS);
+			config.disarmBackupReminder();
+		}
 	}
 
 	@Override

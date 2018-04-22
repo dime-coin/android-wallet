@@ -141,6 +141,12 @@ public final class WalletBalanceFragment extends Fragment
 		viewBalanceLocal.setStrikeThru(Constants.TEST);
 
 		viewProgress = (TextView) view.findViewById(R.id.wallet_balance_progress);
+		viewProgress.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(getActivity(), NetworkMonitorActivity.class));
+			}
+		});
 	}
 
 	@Override
