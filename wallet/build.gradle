@@ -8,8 +8,8 @@ android {
         applicationId "co.com.dimecoin.wallet"
         minSdkVersion 19
         targetSdkVersion 27
-        versionCode 4
-        versionName "1.0.0rc4"
+        versionCode 5
+        versionName "1.0.0"
         multiDexEnabled true
     }
 
