@@ -99,7 +99,7 @@ public class Constants
 	public static final String BINARY_URL = "https://code.google.com/p/dimecoin-wallet/downloads/list";
 	public static final String CREDITS_BITCOINJ_URL = "https://github.com/dime-coin/dimecoinj";
 	public static final String CREDITS_ZXING_URL = "https://code.google.com/p/zxing/";
-    public static final String CREDITS_WEBSITE_URL = "https://dimecoin.com.co";
+    public static final String CREDITS_WEBSITE_URL = "https://www.dimecoinnetwork.com";
 
 	public static final String MARKET_APP_URL = "market://details?id=%s";
 	public static final String WEBMARKET_APP_URL = "https://play.google.com/store/apps/details?id=%s";
