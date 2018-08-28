@@ -256,7 +256,7 @@ public class ExchangeRatesProvider extends ContentProvider
             Reader reader = new InputStreamReader(new BufferedInputStream(urlConnection.getInputStream(), 1024));
 			Io.copy(reader, stringBuilder);
 			JSONObject jsonObject = new JSONObject(stringBuilder.toString());
-			btcRate = jsonObject.getDouble("ticker");
+			btcRate = jsonObject.getJSONObject("ticker").getDouble("btc");
 			reader.close();
         } catch (final Exception e) {
             e.printStackTrace();
