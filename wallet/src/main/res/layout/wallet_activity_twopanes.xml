@@ -17,13 +17,13 @@
 
 			<fragment
 				android:id="@+id/wallet_balance_fragment"
-				android:name="de.schildbach.wallet.ui.WalletBalanceFragment"
+				android:name="com.dimecoinnetwork.wallet.ui.WalletBalanceFragment"
 				android:layout_gravity="center_vertical"
 				android:layout_weight="1" />
 
 			<fragment
 				android:id="@+id/wallet_address_fragment"
-				android:name="de.schildbach.wallet.ui.WalletAddressFragment"
+				android:name="com.dimecoinnetwork.wallet.ui.WalletAddressFragment"
 				android:layout_gravity="center_vertical"
 				android:layout_margin="16dp"
 				android:layout_weight="2" />
@@ -39,7 +39,7 @@
 
 				<fragment
 					android:id="@+id/exchange_rates_fragment"
-					android:name="de.schildbach.wallet.ui.ExchangeRatesFragment"
+					android:name="com.dimecoinnetwork.wallet.ui.ExchangeRatesFragment"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:layout_gravity="bottom|center_horizontal" />
@@ -54,7 +54,7 @@
 
 				<fragment
 					android:id="@+id/wallet_transactions_fragment"
-					android:name="de.schildbach.wallet.ui.WalletTransactionsFragment"
+					android:name="com.dimecoinnetwork.wallet.ui.WalletTransactionsFragment"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:layout_gravity="bottom|center_horizontal" />
@@ -64,7 +64,7 @@
 
 	<fragment
 		android:id="@+id/wallet_actions_fragment"
-		android:name="de.schildbach.wallet.ui.WalletActionsFragment"
+		android:name="com.dimecoinnetwork.wallet.ui.WalletActionsFragment"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_marginBottom="16dp"
@@ -74,7 +74,7 @@
 
 	<fragment
 		android:id="@+id/wallet_disclaimer_fragment"
-		android:name="de.schildbach.wallet.ui.WalletDisclaimerFragment"
+		android:name="com.dimecoinnetwork.wallet.ui.WalletDisclaimerFragment"
 		android:layout_width="0dp"
 		android:layout_height="wrap_content"
 		app:layout_constraintBottom_toBottomOf="parent"

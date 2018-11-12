@@ -5,7 +5,7 @@ android {
     buildToolsVersion "27.0.3"
 
     defaultConfig {
-        applicationId "co.com.dimecoin.wallet"
+        applicationId "com.dimecoinnetwork.wallet"
         minSdkVersion 19
         targetSdkVersion 27
         versionCode 6
@@ -23,7 +23,7 @@ android {
             debuggable true
         }
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-android.txt'
         }
     }
