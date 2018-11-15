@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
-	package="co.com.dimecoin.wallet"
+	package="com.dimecoinnetwork.wallet"
 	android:installLocation="internalOnly">
 
 	<uses-permission android:name="android.permission.INTERNET" />
@@ -48,20 +48,20 @@
 		android:xlargeScreens="true" />
 
 	<application
-		android:name="de.schildbach.wallet.WalletApplication"
+		android:name="com.dimecoinnetwork.wallet.WalletApplication"
 		android:allowBackup="false"
 		android:hardwareAccelerated="true"
 		android:icon="@mipmap/ic_launcher"
 		android:label="@string/app_name"
 		android:theme="@style/My.Theme">
         <activity
-                android:name="de.schildbach.wallet.ui.WalletActivity"
+                android:name="com.dimecoinnetwork.wallet.ui.WalletActivity"
                 android:configChanges="keyboard|keyboardHidden"
                 android:launchMode="singleTask" />
 
 		<activity-alias
-			android:name="de.schildbach.wallet.WalletActivity"
-			android:targetActivity="de.schildbach.wallet.ui.WalletActivity" >
+			android:name="com.dimecoinnetwork.wallet.WalletActivity"
+			android:targetActivity="com.dimecoinnetwork.wallet.ui.WalletActivity" >
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 
@@ -77,7 +77,7 @@
 		</activity-alias>
 
 		<activity
-			android:name="de.schildbach.wallet.ui.SendCoinsActivity"
+			android:name="com.dimecoinnetwork.wallet.ui.SendCoinsActivity"
 			android:configChanges="keyboard|keyboardHidden"
 			android:label="@string/send_coins_activity_title"
 			android:screenOrientation="behind"
@@ -113,41 +113,41 @@
 			</intent-filter>
 		</activity>
 		<activity
-			android:name="de.schildbach.wallet.ui.SendCoinsQrActivity"
+			android:name="com.dimecoinnetwork.wallet.ui.SendCoinsQrActivity"
 			android:configChanges="keyboard|keyboardHidden"
 			android:theme="@android:style/Theme.Translucent.NoTitleBar" >
 		</activity>
 		<activity
-			android:name="de.schildbach.wallet.ui.RequestCoinsActivity"
+			android:name="com.dimecoinnetwork.wallet.ui.RequestCoinsActivity"
 			android:configChanges="keyboard|keyboardHidden"
 			android:label="@string/request_coins_activity_title"
 			android:screenOrientation="behind"
 			android:windowSoftInputMode="adjustResize" />
 		<activity
-			android:name="de.schildbach.wallet.ui.AddressBookActivity"
+			android:name="com.dimecoinnetwork.wallet.ui.AddressBookActivity"
 			android:configChanges="keyboard|keyboardHidden"
 			android:label="@string/address_book_activity_title"
 			android:screenOrientation="behind" />
 		<activity
-			android:name="de.schildbach.wallet.ui.ExchangeRatesActivity"
+			android:name="com.dimecoinnetwork.wallet.ui.ExchangeRatesActivity"
 			android:configChanges="keyboard|keyboardHidden"
 			android:label="@string/exchange_rates_activity_title"
 			android:screenOrientation="behind" />
 		<activity
-			android:name="de.schildbach.wallet.ui.NetworkMonitorActivity"
+			android:name="com.dimecoinnetwork.wallet.ui.NetworkMonitorActivity"
 			android:configChanges="keyboard|keyboardHidden"
 			android:label="@string/network_monitor_activity_title"
 			android:screenOrientation="behind" />
 		<activity
-			android:name="de.schildbach.wallet.ui.PreferencesActivity"
+			android:name="com.dimecoinnetwork.wallet.ui.PreferencesActivity"
 			android:label="@string/preferences_activity_title"
 			android:screenOrientation="behind" />
 		<activity
-			android:name="de.schildbach.wallet.ui.AboutActivity"
+			android:name="com.dimecoinnetwork.wallet.ui.AboutActivity"
 			android:label="@string/about_title"
 			android:screenOrientation="behind" />
 		<activity
-			android:name="de.schildbach.wallet.ui.ImportKeysActivity"
+			android:name="com.dimecoinnetwork.wallet.ui.ImportKeysActivity"
 			android:configChanges="orientation|keyboard|keyboardHidden"
 			android:theme="@style/My.Theme.Dialog" >
 			<intent-filter android:label="@string/import_keys_intent_filter_action" >
@@ -160,7 +160,7 @@
 			</intent-filter>
 		</activity>
 		<activity
-			android:name="de.schildbach.wallet.ui.ScanActivity"
+			android:name="com.dimecoinnetwork.wallet.ui.ScanActivity"
 			android:configChanges="orientation|keyboard|keyboardHidden"
 			android:screenOrientation="landscape"
 			android:stateNotNeeded="true"
@@ -177,17 +177,17 @@
 		</provider>
         <!-- Need to update this for the coin -->
 		<provider
-			android:name="de.schildbach.wallet.AddressBookProvider"
-			android:authorities="co.com.dimecoin.wallet.address_book"
+			android:name="com.dimecoinnetwork.wallet.AddressBookProvider"
+			android:authorities="com.dimecoinnetwork.wallet.address_book"
 			android:exported="false" />
         <!-- Need to update this for the coin -->
 		<provider
-			android:name="de.schildbach.wallet.ExchangeRatesProvider"
-			android:authorities="co.com.dimecoin.wallet.exchange_rates"
+			android:name="com.dimecoinnetwork.wallet.ExchangeRatesProvider"
+			android:authorities="com.dimecoinnetwork.wallet.exchange_rates"
 			android:exported="false" />
 
 		<receiver
-			android:name="de.schildbach.wallet.WalletBalanceWidgetProvider"
+			android:name="com.dimecoinnetwork.wallet.WalletBalanceWidgetProvider"
 			android:label="Dimecoin Wallet Balance" >
 			<intent-filter>
 				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -199,13 +199,13 @@
 		</receiver>
 
 		<service
-			android:name="de.schildbach.wallet.service.BlockchainServiceImpl"
+			android:name="com.dimecoinnetwork.wallet.service.BlockchainServiceImpl"
 			android:exported="false" />
 		<service
-			android:name="de.schildbach.wallet.offline.AcceptBluetoothService"
+			android:name="com.dimecoinnetwork.wallet.offline.AcceptBluetoothService"
 			android:exported="false" />
 
-		<receiver android:name="de.schildbach.wallet.service.AutosyncReceiver" >
+		<receiver android:name="com.dimecoinnetwork.wallet.service.AutosyncReceiver" >
 			<intent-filter>
 				<action android:name="android.intent.action.BOOT_COMPLETED" />
 			</intent-filter>
