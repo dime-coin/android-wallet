@@ -66,7 +66,7 @@
 				android:layout_gravity="center"
 				android:background="@drawable/qrcode_frame"
 				android:padding="8dp"
-				android:scaleType="centerInside" />
+				android:scaleType="fitXY" />
 		</FrameLayout>
 	</LinearLayout>
 

@@ -356,8 +356,7 @@ public final class SendingAddressesFragment extends ListFragment implements Load
 	private void handleShowQr(final String address)
 	{
 		final String uri = BitcoinURI.convertToBitcoinURI(address, null, null, null);
-		final int size = (int) (256 * getResources().getDisplayMetrics().density);
-		BitmapFragment.show(getFragmentManager(), Qr.bitmap(uri, size));
+		BitmapFragment.show(getFragmentManager(), Qr.bitmap(uri));
 	}
 
 	private void handleCopyToClipboard(final String address)

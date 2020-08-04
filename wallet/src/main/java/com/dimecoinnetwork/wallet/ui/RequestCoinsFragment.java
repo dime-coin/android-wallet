@@ -33,11 +33,13 @@ import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
-import android.graphics.Bitmap;
+//import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.nfc.NfcManager;
 import android.os.Bundle;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.app.LoaderManager.LoaderCallbacks;
+import android.support.v4.app.ShareCompat;
 import android.support.v4.app.ShareCompat.IntentBuilder;
 import android.support.v4.content.Loader;
 import android.support.v4.view.MenuItemCompat;
@@ -98,7 +100,7 @@ public final class RequestCoinsFragment extends Fragment
 	private BluetoothAdapter bluetoothAdapter;
 
 	private ImageView qrView;
-	private Bitmap qrCodeBitmap;
+	private BitmapDrawable qrCodeBitmap;
 	private Spinner addressView;
 	private CheckBox includeLabelView;
 	private TextView initiateRequestView;
@@ -168,7 +170,7 @@ public final class RequestCoinsFragment extends Fragment
 			@Override
 			public void onClick(final View v)
 			{
-				BitmapFragment.show(getFragmentManager(), qrCodeBitmap);
+				BitmapFragment.show(getFragmentManager(), qrCodeBitmap.getBitmap());
 			}
 		});
 
@@ -371,9 +373,9 @@ public final class RequestCoinsFragment extends Fragment
 		final String bitcoinRequest = determineBitcoinRequestStr(true);
 
 		// update qr-code
-		final int size = (int) (256 * getResources().getDisplayMetrics().density);
-		qrCodeBitmap = Qr.bitmap(bitcoinRequest, size);
-		qrView.setImageBitmap(qrCodeBitmap);
+		qrCodeBitmap = new BitmapDrawable(getResources(), Qr.bitmap(bitcoinRequest));
+        qrCodeBitmap.setFilterBitmap(false);
+        qrView.setImageDrawable(qrCodeBitmap);
 
 		// update nfc ndef message
 		final boolean nfcSuccess = Nfc.publishUri(nfcManager, activity, bitcoinRequest);

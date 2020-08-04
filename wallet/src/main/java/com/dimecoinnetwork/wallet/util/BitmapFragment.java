@@ -22,6 +22,7 @@ import javax.annotation.Nonnull;
 import android.app.Activity;
 import android.app.Dialog;
 import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentManager;
@@ -70,15 +71,16 @@ public class BitmapFragment extends DialogFragment
 	@Override
 	public Dialog onCreateDialog(final Bundle savedInstanceState)
 	{
-		final Bitmap bitmap = (Bitmap) getArguments().getParcelable(KEY_BITMAP);
-
+		final BitmapDrawable bitmap = new BitmapDrawable(getResources(), (Bitmap) args.getParcelable(KEY_BITMAP));
+		bitmap.setFilterBitmap(false);
+		
 		final Dialog dialog = new Dialog(activity);
 		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		dialog.setContentView(R.layout.bitmap_dialog);
 		dialog.setCanceledOnTouchOutside(true);
 
 		final ImageView imageView = (ImageView) dialog.findViewById(R.id.bitmap_dialog_image);
-		imageView.setImageBitmap(bitmap);
+		imageView.setImageDrawable(bitmap);
 		imageView.setOnClickListener(new View.OnClickListener()
 		{
 			@Override

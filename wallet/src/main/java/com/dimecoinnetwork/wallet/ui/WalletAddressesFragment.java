@@ -28,6 +28,7 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.drawable.BitmapDrawable;
 import android.database.ContentObserver;
 import android.net.Uri;
 import android.os.Bundle;
@@ -253,8 +254,7 @@ public final class WalletAddressesFragment extends ListFragment
 			private void handleShowQr(@Nonnull final Address address)
 			{
 				final String uri = BitcoinURI.convertToBitcoinURI(address, null, null, null);
-				final int size = (int) (256 * getResources().getDisplayMetrics().density);
-				BitmapFragment.show(getFragmentManager(), Qr.bitmap(uri, size));
+				BitmapFragment.show(getFragmentManager(), Qr.bitmap(uri));
 			}
 
 			private void handleCopyToClipboard(@Nonnull final Address address)

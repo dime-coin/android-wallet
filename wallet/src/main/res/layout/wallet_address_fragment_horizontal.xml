@@ -47,6 +47,7 @@
 		android:layout_marginLeft="16dp"
 		android:background="@drawable/qrcode_frame"
 		android:focusable="true"
-		android:scaleType="centerInside" />
+		android:padding="4dp"
+        android:scaleType="fitXY" />
 
 </LinearLayout>

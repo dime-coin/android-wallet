@@ -22,7 +22,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
-import android.graphics.Bitmap;
+//import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.nfc.NfcManager;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -63,7 +64,7 @@ public final class WalletAddressFragment extends Fragment
 
 	private Address lastSelectedAddress;
 
-	private Bitmap qrCodeBitmap;
+	private BitmapDrawable qrCodeBitmap;
 
 	@Override
 	public void onAttach(final Activity activity)
@@ -149,8 +150,10 @@ public final class WalletAddressFragment extends Fragment
 			final String addressStr = BitcoinURI.convertToBitcoinURI(selectedAddress, null, null, null);
 
 			final int size = (int) (256 * getResources().getDisplayMetrics().density);
-			qrCodeBitmap = Qr.bitmap(addressStr, size);
-			bitcoinAddressQrView.setImageBitmap(qrCodeBitmap);
+			qrCodeBitmap = new BitmapDrawable(getResources(), Qr.bitmap(addressStr));
+            qrCodeBitmap.setFilterBitmap(false);
+			bitcoinAddressQrView.setImageDrawable(qrCodeBitmap);
+			
 
 			Nfc.publishUri(nfcManager, getActivity(), addressStr);
 		}
