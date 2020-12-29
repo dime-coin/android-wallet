@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion "27.0.3"
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
         applicationId "com.dimecoinnetwork.wallet"
-        minSdkVersion 19
-        targetSdkVersion 27
+        minSdkVersion 23
+        targetSdkVersion 23
         versionCode 6
         versionName "1.1.0"
         multiDexEnabled true
@@ -19,9 +19,6 @@ android {
     }
 
     buildTypes {
-        debug {
-            debuggable true
-        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-android.txt'
@@ -59,14 +56,21 @@ android {
         abortOnError false
         disable 'MissingTranslation'
     }
+    ndkVersion '22.0.7026061'
 
     packagingOptions {
+        exclude 'resources.arsc'
+        exclude 'res/drawable/edit_text.xml'
+        exclude 'res/layout/transient_notification.xml'
         exclude 'AndroidManifest.xml'
+        exclude 'res/drawable/spinner_background.xml'
+        exclude 'res/drawable/btn_check.xml'
+        exclude 'res/layout/dialog_title.xml'
     }
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:27.1.1'
+    compile 'com.android.support:appcompat-v7:27.0.0'
     compile 'com.android.support.constraint:constraint-layout:1.1.0'
     compile 'com.google.android:annotations:4.1.1.4'
     compile 'com.github.dime-coin.dimecoinj:dimecoinj:+'
