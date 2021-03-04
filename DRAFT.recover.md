@@ -36,8 +36,8 @@ Historically, the backup can also be saved to your email account (as a file atta
 
 You now have your backup file on your PC. Wallet backups are encrypted. Let's decrypt it using:
 
-    openssl enc -d -aes-256-cbc -md md5 -a -in dimecoin-wallet-backup-testnet-2014-11-01 > dimecoin-wallet-decrypted-backup
-
+    openssl enc -d -aes-256-cbc -md md5 -a -in Dimecoin-wallet-keys-2021-03-02 
+    
 It will ask you for a decryption password, which is your backup password. If it prints
 "bad password" you've got the wrong password, but if it doesn't print anything your password might
 still be wrong. We can only be sure by looking at the decrypted data.
