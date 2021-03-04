@@ -38,7 +38,7 @@ On your Android device, go to Settings > Developer Options and enable "USB debug
 
 ## LOCATING THE BACKUP FILES
 
-If you followed the app's guidance your backup files will be located on a share of the storage access framework, very likely Google Drive. Watch out for filenames starting with `dimecoin-wallet-keys-`. The date the key was created will be appended to the end of the file name in this format (YYYY-MM-DD).
+If you followed the app's guidance your backup files will be located on a share of the storage access framework, very likely Google Drive or OneDrive. Watch out for filenames starting with `dimecoin-wallet-keys-`. The date the key was created will be appended to the end of the file name in this format (YYYY-MM-DD).
 
 Alternatively, the backup can also be saved to your email account (as a file attachment of an email sent to yourself) or on your SD card in the `/Download` folder. Once located, move the backup file to your PCs desktop.
 
