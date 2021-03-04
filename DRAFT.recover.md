@@ -30,7 +30,7 @@ On your PC, within your Linux shell, install the following Ubuntu packages if mi
 
 On your PC, within Powershell, you will need to install openssl if it has not previously been installed. This tutorial will use Chocolatey as a package manager. Assuming you have [Chocolately](https://chocolatey.org/) installed, your first task will be to install OpenSSL on Windows. (If not, you can use these [installation isntructions](https://chocolatey.org/install) as a guide). 
 
-Once Chocolatey is installed open up your PowerShell console and run the command `choco install OpenSSL.Light`
+Once Chocolatey is installed, open up your PowerShell console and run the command `choco install OpenSSL.Light`
 
 ### Android Device
 
