@@ -23,7 +23,7 @@ Your wallet can be manually backed up to and restored from a share of the storag
     Testnet: dimecoin-wallet-backup-testnet-<yyyy-MM-dd>
 
 If you want to recover coins from manual backups and for whatever reason you cannot use the app
-itself to restore from the backup, see the separate [README.recover.md](README.recover.md) guide.
+itself to restore from the backup, refer to the separate [guide](recover.md) for instruction.
 
 The current fee rate for each of the fee categories (economic, normal, priority) is cached in
 app-private storage:
