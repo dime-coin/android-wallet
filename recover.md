@@ -1,4 +1,4 @@
-Recovering Dimecoins From Android Wallet App (Draft not finished)
+Recovering Dimecoins From Android Wallet App
 ===================
 
 ## INTRODUCTION
