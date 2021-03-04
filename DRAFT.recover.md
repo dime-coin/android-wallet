@@ -34,7 +34,7 @@ Once Chocolatey is installed, open up your PowerShell console and run the comman
 
 ### Android Device
 
-On your Android device, go to Settings > Developer Options and enable "USB debugging". On most recent devices you will need to first go to Settings > About and tap on the devices "Build number" multiple times until you see the "You are now a developer" message.
+On your Android device, go to Settings > Developer Options and enable "USB debugging". On most recent devices you will need to first go to Settings > About and tap on the device's "Build number" multiple times until you see the "You are now a developer" message.
 
 ## LOCATING THE BACKUP FILES
 
